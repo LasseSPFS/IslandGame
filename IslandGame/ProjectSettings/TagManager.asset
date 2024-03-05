@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - timeCover
+  - bed
   layers:
   - Default
   - TransparentFX

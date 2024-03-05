@@ -351,6 +351,7 @@
 "Assets/kaptajnSamtale.cs"
 "Assets/movement.cs"
 "Assets/npcDialogScript.cs"
+"Assets/Player.cs"
 -langversion:9.0
 
 /deterministic
