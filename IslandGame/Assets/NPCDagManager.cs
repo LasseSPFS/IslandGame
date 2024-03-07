@@ -14,10 +14,11 @@ public class NPCDagManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        secondDay();
     }
     public void secondDay()
     {
+        if(_days.timeslot != 1)
+        {
         if(_days.itsDay() == true)
         {
             foreach (Transform child in transform)
@@ -33,9 +34,20 @@ public class NPCDagManager : MonoBehaviour
         {
             foreach (Transform child in transform)
             {
-                if (child.gameObject.GetComponent<npcDialogScript>().dialogue2.Length != 0)
+                if (child.gameObject.GetComponent<npcDialogScript>().dialogue3.Length != 0)
                 {
                     child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().dialogue3;
+                }
+            }
+        }
+            if (_days.itsMorning() == true)
+            {
+                foreach (Transform child in transform)
+                {
+                    if (child.gameObject.GetComponent<npcDialogScript>().dialogue4[0].Length != 0)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().dialogue4;
+                    }
                 }
             }
         }

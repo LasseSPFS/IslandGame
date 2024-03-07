@@ -23,6 +23,7 @@ public class npcDialogScript : MonoBehaviour
     public string[] acceptAnswers;
     public string[] answer1;
     public string[] answer2;
+    public Vector2[] locations;
     private int index;
     private int answer;
     public int NPCLevel;
@@ -37,7 +38,8 @@ public class npcDialogScript : MonoBehaviour
     void Start()
     {
      
-        dialogPanel.SetActive(false);   _days = GameObject.Find("DayManager").GetComponent<days>();
+        dialogPanel.SetActive(false);   
+        _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
         answer = 0;
         activeDialog = dialogue1;
@@ -66,10 +68,25 @@ public class npcDialogScript : MonoBehaviour
             }
         }
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
-        if (dialogText.text == activeDialog[index])
+            if (dialogText.text == activeDialog[index])
+            {
+                fortsæt.SetActive(true);
+            }
+         
+
+        if(_days.itsMorning() == true)
         {
-            fortsæt.SetActive(true);
+            transform.localPosition = locations[0];
         }
+        else if (_days.itsDay() == true)
+        {
+            transform.localPosition = locations[1];
+        }
+        else if (_days.itsEvening() == true)
+        {
+            transform.localPosition = locations[2];
+        }
+
     }
     //Funktion der køres, når der klikkes på fortsæt knappen 
     public void NextLine()
@@ -80,7 +97,7 @@ public class npcDialogScript : MonoBehaviour
         {
             index++;
             dialogText.text = "";
-            StartCoroutine(Typing(activeDialog));
+            StartCoroutine(Typing(activeDialog));            
         }
         else
         {
@@ -94,13 +111,15 @@ public class npcDialogScript : MonoBehaviour
     {         
         dialogText.text = "";         
         index = 0;
-        if(activatedActivity == true)
+       
+        dialogPanel.SetActive(false);
+        if (activatedActivity == true)
         {
             PlayerdialogPanel.SetActive(true);
-            PlayerdialogText.text = playerActivityDeskription[NPCLevel-1];
+            PlayerdialogText.text = playerActivityDeskription[NPCLevel - 1];
             _days.daySwitch();
+            activatedActivity = false;
         }
-        dialogPanel.SetActive(false);
     }
 
     //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
@@ -110,7 +129,6 @@ public class npcDialogScript : MonoBehaviour
         accept.SetActive(true);
         decline.GetComponentInChildren<TMP_Text>().text = answer1[answer];
         accept.GetComponentInChildren<TMP_Text>().text = answer2[answer];
-        answer++;
     }
 
     // Hvad der køres når du klikker accept
@@ -136,6 +154,8 @@ public class npcDialogScript : MonoBehaviour
         index = 0;
         StartCoroutine(Typing(activeDialog));
     }
+
+    
 
 
     //skriver hvad der står i dialogen ud i tekstfeltet et bogstav afgangen 

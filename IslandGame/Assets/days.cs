@@ -7,6 +7,7 @@ public class days : MonoBehaviour
 {
     public int timeslot = 1;
     public Image timeSlur;
+    public GameObject playerUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -82,7 +83,8 @@ public class days : MonoBehaviour
     IEnumerator wait()
     {
         timeSlur.color = new Color32(0, 0, 0, 255);
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
+        playerUI.SetActive(false);
         if (timeslot % 3 == 1)
         {
             timeSlur.color = new Color32(255, 255, 255, 0);
