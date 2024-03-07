@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     days _days;
+    public GameObject sleepButton;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -16,19 +18,20 @@ public class Player : MonoBehaviour
     {
         
     }
-
-    public void on
-
-    public void OnCollisionStay2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "bed")
+        if (collision.gameObject.tag == "bed")
         {
-            Debug.Log("godnat");
-            if (Input.GetKey(KeyCode.E))
-            {
-                _days.progresstime();
-            }
+            sleepButton.SetActive(true);
         }
-     
     }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "bed")
+        {
+            sleepButton.SetActive(false);
+        }
+    }
+
 }

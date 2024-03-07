@@ -15,20 +15,25 @@ public class days : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.K))
+        if (Input.GetKeyUp(KeyCode.K))
         {
             progresstime();
         }
     }
 
+    public void daySwitch()
+    {
+        progresstime();
+        StartCoroutine(wait());
+    }
     public void progresstime()
     {
         timeslot += 1;
-        if(timeslot % 3 == 1)
+        if (timeslot % 3 == 1)
         {
-            timeSlur.color = new Color32(255,255,255,0);
+            timeSlur.color = new Color32(255, 255, 255, 0);
         }
-        else if(timeslot % 3 == 2)
+        else if (timeslot % 3 == 2)
         {
             timeSlur.color = new Color32(255, 197, 42, 20);
         }
@@ -36,5 +41,63 @@ public class days : MonoBehaviour
         {
             timeSlur.color = new Color32(0, 0, 0, 210);
         }
+    }
+     public bool itsMorning()
+    {
+        if (timeslot % 3 == 1)
+        {
+            return true;
+        }
+        else 
+        { 
+            return false; 
+        }
+            
+    }
+    public bool itsDay()
+    {
+        if (timeslot % 3 == 2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+    public bool itsEvening()
+    {
+        if (timeslot % 3 == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    IEnumerator wait()
+    {
+        timeSlur.color = new Color32(0, 0, 0, 255);
+        yield return new WaitForSeconds(3);
+        if (timeslot % 3 == 1)
+        {
+            timeSlur.color = new Color32(255, 255, 255, 0);
+        }
+        else if (timeslot % 3 == 2)
+        {
+            timeSlur.color = new Color32(255, 197, 42, 20);
+        }
+        else if (timeslot % 3 == 0)
+        {
+            timeSlur.color = new Color32(0, 0, 0, 210);
+        }
+
+        
+        
+        
     }
 }

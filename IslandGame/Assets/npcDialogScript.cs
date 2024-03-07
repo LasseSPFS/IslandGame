@@ -3,24 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class npcDialogScript : MonoBehaviour 
+public class npcDialogScript : MonoBehaviour
 {
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
+    public GameObject PlayerdialogPanel;
+    public TextMeshProUGUI PlayerdialogText;
     public GameObject fortsæt;
     public GameObject decline;
     public GameObject accept;
 
-    string[] activeDialog;
-    public string[] dialogue;
+    public string[] playerActivityDeskription;
+    [HideInInspector] public string[] activeDialog;
+    public string[] dialogue1;
+    public string[] dialogue2;
+    public string[] dialogue3;
+    public string[] dialogue4;
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
     public string[] answer2;
     private int index;
     private int answer;
+    public int NPCLevel;
     public float wordSpeed;
     public bool isPlayerClose;
+    public bool isLocked;
+    public bool activatedActivity;
     days _days; 
 
 
@@ -31,7 +40,7 @@ public class npcDialogScript : MonoBehaviour
         dialogPanel.SetActive(false);   _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
         answer = 0;
-        activeDialog = dialogue;
+        activeDialog = dialogue1;
     }
 
     // Update is called once per frame
@@ -76,15 +85,22 @@ public class npcDialogScript : MonoBehaviour
         else
         {
             zeroText();
+            
         }
     }
 
     //Bruges til at fjerne dialogboxen og gøre den klar til næste gang den skal bruges
     public void zeroText()
     {         
-            dialogText.text = "";         
-            index = 0;
-            dialogPanel.SetActive(false);
+        dialogText.text = "";         
+        index = 0;
+        if(activatedActivity == true)
+        {
+            PlayerdialogPanel.SetActive(true);
+            PlayerdialogText.text = playerActivityDeskription[NPCLevel-1];
+            _days.daySwitch();
+        }
+        dialogPanel.SetActive(false);
     }
 
     //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
@@ -108,13 +124,10 @@ public class npcDialogScript : MonoBehaviour
         index = 0;
         dialogText.text = "";
         StartCoroutine(Typing(activeDialog));
-        
-
     }
 
     public void declineAnswer()
-    {
-        
+    {      
         activeDialog = declinAnswers;
         decline.SetActive(false);
         accept.SetActive(false);
@@ -122,8 +135,6 @@ public class npcDialogScript : MonoBehaviour
         dialogText.text = "";
         index = 0;
         StartCoroutine(Typing(activeDialog));
-
-
     }
 
 
@@ -138,6 +149,11 @@ public class npcDialogScript : MonoBehaviour
                 {
                     choice();
                 }
+                else if(Bogstav.ToString() == "$")
+                {
+                    NPCLevel += 1;
+                    activatedActivity = true;
+                }
                 else
                 {
                     dialogText.text += Bogstav;
@@ -148,7 +164,6 @@ public class npcDialogScript : MonoBehaviour
             }
             else
             {
-                Debug.Log("Breaking");
                 break;
             }
         }
@@ -159,7 +174,6 @@ public class npcDialogScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Du tæt");
             isPlayerClose = true;
         }
 
