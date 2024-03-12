@@ -15,10 +15,11 @@ public class npcDialogScript : MonoBehaviour
 
     public string[] playerActivityDeskription;
     [HideInInspector] public string[] activeDialog;
-    public string[] dialogue1;
-    public string[] dialogue2;
-    public string[] dialogue3;
-    public string[] dialogue4;
+    public Dictionary<int, string[]> Activities = new Dictionary<int, string[]>();
+    public string[] dag1;
+    public string[] middag;
+    public string[] aften;
+    public string[] morgen;
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
@@ -42,7 +43,7 @@ public class npcDialogScript : MonoBehaviour
         _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
         answer = 0;
-        activeDialog = dialogue1;
+        activeDialog = dag1;
     }
 
     // Update is called once per frame
@@ -118,6 +119,7 @@ public class npcDialogScript : MonoBehaviour
             PlayerdialogPanel.SetActive(true);
             PlayerdialogText.text = playerActivityDeskription[NPCLevel - 1];
             _days.daySwitch();
+            isLocked = true;
             activatedActivity = false;
         }
     }
@@ -165,7 +167,8 @@ public class npcDialogScript : MonoBehaviour
         {
             if (isPlayerClose && dialogPanel.activeInHierarchy)
             {
-                if (Bogstav.ToString() == "@")
+                //fjern islocked efter sprint1
+                if (Bogstav.ToString() == "@" && isLocked == false)
                 {
                     choice();
                 }

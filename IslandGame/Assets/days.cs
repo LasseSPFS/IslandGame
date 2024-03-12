@@ -12,6 +12,8 @@ public class days : MonoBehaviour
     void Start()
     {
         timeSlur.color = new Color(255, 255, 255, 0);
+        progresstime();
+
     }
 
     void Update()
@@ -41,6 +43,12 @@ public class days : MonoBehaviour
         else if (timeslot % 3 == 0)
         {
             timeSlur.color = new Color32(0, 0, 0, 210);
+        }
+
+        //fjern efter sprint 1
+        if(timeslot ==7)
+        {
+            Application.Quit();
         }
     }
      public bool itsMorning()
@@ -97,9 +105,5 @@ public class days : MonoBehaviour
         {
             timeSlur.color = new Color32(0, 0, 0, 210);
         }
-
-        
-        
-        
     }
 }

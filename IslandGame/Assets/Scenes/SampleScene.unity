@@ -522,8 +522,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198181725}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.1, y: -16.6, z: -10.347152}
+  m_LocalRotation: {x: 1e-45, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.55, y: -25.04, z: -10.347152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -911,7 +911,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453390088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -920,6 +920,7 @@ RectTransform:
   - {fileID: 2112696202}
   - {fileID: 128204852}
   - {fileID: 1084817158}
+  - {fileID: 1295276671}
   m_Father: {fileID: 251910791}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1454,6 +1455,82 @@ RectTransform:
   m_AnchoredPosition: {x: 53.199986, y: 12.8}
   m_SizeDelta: {x: -122.80002, y: -47.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &751159953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751159954}
+  - component: {fileID: 751159956}
+  - component: {fileID: 751159955}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &751159954
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751159953}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1570339761}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -173.7, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &751159955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751159953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 2032837754, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &751159956
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751159953}
+  m_CullTransparentMesh: 1
 --- !u!1 &847546786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,21 +1576,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0017398894, y: -0.047062434}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 0.32142857, y: 0.64}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38220394, y: 0.38220394}
+  m_Size: {x: 0.26735038, y: 0.52906626}
   m_EdgeRadius: 0
 --- !u!58 &847546789
 CircleCollider2D:
@@ -1525,12 +1602,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: 0.00000023841858}
+  m_Offset: {x: 0.00000047683716, y: -0.06}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.5
 --- !u!212 &847546790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1572,8 +1649,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 1342388797, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1605,19 +1682,20 @@ MonoBehaviour:
   playerActivityDeskription:
   - I helped out kaptain i feel like we are closer now
   activeDialog: []
-  dialogue1:
+  dag1:
   - Jeg er leder
-  - "og s\xE5dan er det"
-  dialogue2:
-  - "Morgen.  Hvis du skal have nogle forventninger skal du lytte til mig i mods\xE6tning
+  - "S\xE5dan er det"
+  - men godt at se du klaret styrtet
+  middag:
+  - "Godmorgen. Hvis du skal have nogle forventninger skal du lytte til mig i mods\xE6tning
     til den dovne fisker"
-  - "Er du klar til at arbejde for f\xF8den.@"
-  dialogue3:
-  - hej 3
-  dialogue4:
-  - "Morgen.  Hvis du skal have nogle forventninger skal du lytte til mig i mods\xE6tning
+  - "Er du klar til at arbejde for f\xF8den? @"
+  aften:
+  - "Uden mad og drikke dyr helten ikke, det g\xE6lder ogs\xE5 s\xF8vn."
+  morgen:
+  - "Godmorgen. Hvis du skal have nogle forventninger skal du lytte til mig i mods\xE6tning
     til den dovne fisker"
-  - "Er du klar til at arbejde for f\xF8den.@"
+  - "Er du klar til at arbejde for f\xF8den? @"
   declinAnswers:
   - "r\xF8vhuld"
   - det var grimt sagt
@@ -1635,7 +1713,7 @@ MonoBehaviour:
   - {x: 63.17, y: -25.33}
   - {x: 75.3, y: -4.4}
   NPCLevel: 0
-  wordSpeed: 0.1
+  wordSpeed: 0.05
   isPlayerClose: 0
   isLocked: 0
   activatedActivity: 0
@@ -2027,8 +2105,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.1, y: -16.6, z: -10.347152}
+  m_LocalRotation: {x: 1e-45, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.55, y: -25.04, z: -10.347152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2349,6 +2427,82 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -41}
   m_SizeDelta: {x: -361.4, y: -92}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1103699421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103699422}
+  - component: {fileID: 1103699424}
+  - component: {fileID: 1103699423}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1103699422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103699421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1906294935}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -173.7, y: -12.9}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1103699423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103699421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1431246280, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1103699424
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103699421}
+  m_CullTransparentMesh: 1
 --- !u!1 &1159630867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,9 +2566,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1253089714}
         m_TargetAssemblyTypeName: npcDialogScript, Assembly-CSharp
-        m_MethodName: NextLine
+        m_MethodName: acceptAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2511,7 +2665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253089709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.461, y: -17.6, z: 0}
+  m_LocalPosition: {x: 78.461, y: -2.1, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2528,21 +2682,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.007591687, y: 0.062431365}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 0.32142857, y: 0.64}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38220394, y: 0.38220394}
+  m_Size: {x: 0.18482588, y: 0.43332094}
   m_EdgeRadius: 0
 --- !u!58 &1253089712
 CircleCollider2D:
@@ -2554,12 +2708,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: 0.00000023841858}
+  m_Offset: {x: 0.00000047683716, y: 0.02}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.5
 --- !u!212 &1253089713
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2601,8 +2755,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.41194963, g: 0.8959184, b: 1, a: 1}
+  m_Sprite: {fileID: 1431246280, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2634,24 +2788,34 @@ MonoBehaviour:
   playerActivityDeskription:
   - I helped out kaptain i feel like we are closer now
   activeDialog: []
-  dialogue1:
-  - hej
-  dialogue2:
+  dag1:
+  - Jeg tjekker lige om du er rask efter styrtet
+  - "Du ser rask ud men kom gerne forbi igen, hvis du f\xF8ler en forskel"
+  middag:
+  - "Har altid gerne ville vide, hvordan trauma p\xE5virker mennesker"
+  - Har du mulighed for at raportere, hvis de ser tydlige mentale forandringer hos
+    de andre? @
+  aften:
+  - Aften
+  morgen:
   - 
-  dialogue3:
-  - hej 3
-  dialogue4:
-  - 
-  declinAnswers: []
-  acceptAnswers: []
-  answer1: []
-  answer2: []
+  declinAnswers:
+  - "S\xE5 skal du heller ikke regner med mig fremover"
+  acceptAnswers:
+  - 'Tak for det '
+  - Husk at du altid kan komme her, hvis du bliver syg
+  - "Du er ogs\xE5 velkommen til at henvende de andre, bare husk at rapportere, hvis
+    der sker noget mentalt med dem"
+  answer1:
+  - nej
+  answer2:
+  - ja
   locations:
-  - {x: 0, y: 0}
-  - {x: 0, y: -10}
-  - {x: 0, y: -10}
+  - {x: -100, y: -100}
+  - {x: 78.461, y: -2.1}
+  - {x: 78.461, y: -2.1}
   NPCLevel: 0
-  wordSpeed: 0
+  wordSpeed: 0.05
   isPlayerClose: 0
   isLocked: 0
   activatedActivity: 0
@@ -2766,6 +2930,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1295276670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1295276671}
+  - component: {fileID: 1295276673}
+  - component: {fileID: 1295276672}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1295276671
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295276670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 453390089}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -173.7, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1295276672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295276670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1342388797, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1295276673
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295276670}
+  m_CullTransparentMesh: 1
 --- !u!1 &1358546225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,15 +3048,16 @@ MonoBehaviour:
   playerActivityDeskription:
   - I pillede ved flyet
   activeDialog: []
-  dialogue1:
+  dag1:
   - Hej
-  - "Du burde nok hilse p\xE5 l\xE6gen"
-  dialogue2:
-  - "Hej vil du hj\xE6lpe mig med at pille lidt med flyet?@  "
-  dialogue3:
-  - hej2
-  dialogue4:
-  - "Hej vil du hj\xE6lpe mig med at pille lidt med flyet?@  "
+  - Du ser ikke helt okay ud snak lige med Linda.
+  - "Hun er l\xE6ge og er i kampen"
+  middag:
+  - "Hej vil du hj\xE6lpe mig med at pille lidt med flyet?"
+  aften:
+  - "Er helt smadret tror jeg g\xE5r i seng nu"
+  morgen:
+  - "Hej vil du hj\xE6lpe mig med at pille lidt med flyet? @"
   declinAnswers:
   - En anden gang
   acceptAnswers:
@@ -2830,7 +3071,7 @@ MonoBehaviour:
   - {x: 70.33, y: -25}
   - {x: 76, y: -4.4}
   NPCLevel: 0
-  wordSpeed: 0
+  wordSpeed: 0.05
   isPlayerClose: 0
   isLocked: 0
   activatedActivity: 0
@@ -2844,21 +3085,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.101656765}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 0.32142857, y: 0.64}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.38220394, y: 0.38220394}
+  m_Size: {x: 0.21, y: 0.4297101}
   m_EdgeRadius: 0
 --- !u!58 &1358546228
 CircleCollider2D:
@@ -2870,12 +3111,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: 0.00000023841858}
+  m_Offset: {x: 0.00000047683716, y: -0.09}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.5
 --- !u!212 &1358546229
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2917,8 +3158,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.83495176, b: 0.28930813, a: 1}
+  m_Sprite: {fileID: 2032837754, guid: c708de2e64136b743b1aba42fb66c9ee, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3006,9 +3247,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1253089714}
         m_TargetAssemblyTypeName: npcDialogScript, Assembly-CSharp
-        m_MethodName: NextLine
+        m_MethodName: declineAnswer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3364,7 +3605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1570339761
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3381,6 +3622,7 @@ RectTransform:
   - {fileID: 1748023833}
   - {fileID: 2111756188}
   - {fileID: 1000918792}
+  - {fileID: 751159954}
   m_Father: {fileID: 251910791}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4192,6 +4434,7 @@ GameObject:
   - component: {fileID: 1843268873}
   - component: {fileID: 1843268877}
   - component: {fileID: 1843268878}
+  - component: {fileID: 1843268879}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4233,6 +4476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  anim: {fileID: 1843268879}
 --- !u!212 &1843268875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4274,7 +4518,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b8305edfaf030424c9b0f8d793e7d1d5, type: 3}
+  m_Sprite: {fileID: -618732168, guid: ea79c1531ff3db342be483d5a3803246, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4293,8 +4537,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843268872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.1, y: -16.6, z: -0.34715134}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 22.55, y: -25.04, z: -0.34715134}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4313,18 +4557,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.22810358}
+  m_Offset: {x: -0.0028635561, y: 0.01004602}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.36, y: 0.52}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.5437928}
+  m_Size: {x: 0.2799759, y: 0.43336025}
   m_EdgeRadius: 0
 --- !u!114 &1843268878
 MonoBehaviour:
@@ -4339,6 +4583,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleepButton: {fileID: 1936591782}
+--- !u!95 &1843268879
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843268872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d6a4e6e9659193849a9451ee8709ba1e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1866883881
 GameObject:
   m_ObjectHideFlags: 3
@@ -4552,6 +4817,7 @@ RectTransform:
   - {fileID: 1571488744}
   - {fileID: 1369376420}
   - {fileID: 1159630871}
+  - {fileID: 1103699422}
   m_Father: {fileID: 251910791}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4865,7 +5131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
