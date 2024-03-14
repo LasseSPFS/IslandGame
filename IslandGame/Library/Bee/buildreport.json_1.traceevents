@@ -1,592 +1,479 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1710251067717528, "dur": 390494, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1710251067717548, "dur": 10044, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1710251067727595, "dur": 366881, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1710251068094478, "dur": 13544, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1710251068108683, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411795334641, "dur": 948522, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411795335084, "dur": 14742, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411795349829, "dur": 47886, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411795397717, "dur": 447880, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411795845600, "dur": 424818, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411796270421, "dur": 12742, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411796284091, "dur": 18, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1710411795697054, "dur": 125551, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795697938, "dur": 45452, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795806008, "dur": 4412, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795810427, "dur": 12158, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795811187, "dur": 10472, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795828250, "dur": 1698, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1710411795827255, "dur": 2748, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411796284264, "dur": 215, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1710251067754912, "dur":1179, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251067756101, "dur":109, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1710251067756232, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1710251067756249, "dur":351, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1710251067756626, "dur":776, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251067757402, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067570, "dur":16, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067586, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067600, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067603, "dur":12, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067615, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067617, "dur":109, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067727, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067731, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067739, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067741, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067748, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067750, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067756, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067758, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067766, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067768, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068067775, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068068033, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068068067, "dur":3011, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1710251067757285, "dur":161, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067757446, "dur":5334, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067762780, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1710251067762831, "dur":109, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067762951, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067768208, "dur":1488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1710251067769729, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1710251067769765, "dur":136, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067769907, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067770023, "dur":3004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1710251067773061, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067773101, "dur":8711, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067781822, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067781836, "dur":3150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067785022, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067785065, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067785120, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067785131, "dur":3310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067788506, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067788551, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067788722, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067788844, "dur":6876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067795769, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067795813, "dur":632, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067796453, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067796465, "dur":3860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067800362, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067800400, "dur":320, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067800730, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067800745, "dur":2190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067802967, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067803032, "dur":239, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067803277, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067803287, "dur":3088, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067806407, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067806439, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067806510, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067806520, "dur":4146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067810707, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067810742, "dur":603, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067811358, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067811373, "dur":3181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067814587, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067814626, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067814685, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067814697, "dur":2057, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067816788, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067816824, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067816922, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067816961, "dur":2996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067819996, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067820037, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067820118, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067820158, "dur":3287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067823491, "dur":171453, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067994945, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067995026, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1710251067995069, "dur":1867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1710251067996971, "dur":70357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067757399, "dur":9, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067757409, "dur":5199, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067762621, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1710251067762626, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067762668, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1710251067762670, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067762709, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067763639, "dur":3003, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1710251067766648, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1710251067766693, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067766734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067767300, "dur":1598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1710251067768949, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1710251067768988, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067769042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067769054, "dur":1559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1710251067770647, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1710251067770686, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067770713, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067770722, "dur":1026, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":2, "ts":1710251067771781, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067771816, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067771843, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067771874, "dur":24230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067796144, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067796194, "dur":312, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067796511, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067796519, "dur":3395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067799956, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067799989, "dur":184, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067800257, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067800267, "dur":2589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067802895, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067802930, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067803031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067803042, "dur":3067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067806148, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067806190, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067806232, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067806244, "dur":3808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067810094, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067810128, "dur":153, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067810288, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067810299, "dur":3598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067813934, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067813973, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067814120, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067814130, "dur":1961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067816135, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067816173, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067816306, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067816317, "dur":3836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067820188, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067820225, "dur":374, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067820607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067820621, "dur":6756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067827414, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067827451, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067827487, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067827498, "dur":2819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067830382, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067830419, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067830469, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067830483, "dur":2270, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067832799, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067832962, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067832999, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067833011, "dur":1680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067834751, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067834800, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067834835, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067834847, "dur":1188, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067836069, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067836107, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067836304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067836315, "dur":962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067837313, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067837350, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067837388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067837397, "dur":6060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067843504, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067843543, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067843577, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067843587, "dur":3134, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067846757, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067846795, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067846833, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067846844, "dur":2954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067849835, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067849869, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067849916, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067849927, "dur":1217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067851181, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067851216, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067851254, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067851263, "dur":3051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067854356, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067854394, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067854432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067854443, "dur":17360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067871838, "dur":63727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067935566, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067935651, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067935664, "dur":11230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1710251067946933, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1710251067947010, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067947074, "dur":1205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":2, "ts":1710251067948312, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1710251067948352, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067948362, "dur":10532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1710251067958930, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1710251067958973, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067958983, "dur":3047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":2, "ts":1710251067962063, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1710251067962177, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067962211, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067962220, "dur":1025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":2, "ts":1710251067963281, "dur":1069, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1710251067964351, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067964414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067964424, "dur":1423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":2, "ts":1710251067965888, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1710251067965927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067965938, "dur":3131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":2, "ts":1710251067969104, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1710251067969147, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1710251067969157, "dur":1646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":2, "ts":1710251067970839, "dur":96500, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067757597, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067757598, "dur":5181, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067762779, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1710251067762817, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067762912, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067766970, "dur":3630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1710251067770637, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1710251067770671, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067770720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067770728, "dur":2241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":3, "ts":1710251067773008, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1710251067773049, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067773096, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067779204, "dur":20118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":3, "ts":1710251067799366, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067799413, "dur":148, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067799568, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067799604, "dur":2022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067801664, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067801696, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067801779, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067801822, "dur":2767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067804625, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067804662, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067804720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067804730, "dur":3502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067808419, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067808452, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067808623, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067808633, "dur":3931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067812602, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067812643, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067812746, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067812759, "dur":2788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067815585, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067815626, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067815659, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067815669, "dur":2599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067818312, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067818355, "dur":205, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067818568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067818580, "dur":3431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067822046, "dur":162976, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067985023, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067985102, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1710251067985114, "dur":1462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":3, "ts":1710251067986612, "dur":80718, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067757503, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067757504, "dur":5270, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067762774, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1710251067762830, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067762868, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067766230, "dur":23600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":4, "ts":1710251067789893, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067789939, "dur":1711, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067791657, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067791667, "dur":9938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067801651, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067801924, "dur":696, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067802633, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067802645, "dur":4637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067807319, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067807355, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067807534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067807546, "dur":4080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067811669, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067811709, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067811768, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067811779, "dur":3442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067815264, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067815303, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067815412, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067815423, "dur":3259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067818722, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067818788, "dur":236, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067819032, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067819045, "dur":4573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067823655, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067823847, "dur":1000, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067824860, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067824902, "dur":2714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067827654, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067827689, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067827732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067827742, "dur":3764, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067831543, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067831582, "dur":333, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067831953, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067831965, "dur":1452, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067833452, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067833487, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067833522, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067833535, "dur":2231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067835805, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067835842, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067835877, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067835888, "dur":1358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067837287, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067837329, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067837368, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067837380, "dur":6040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067843461, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067843505, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067843546, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067843557, "dur":1677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067845603, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067845639, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067845683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067845695, "dur":2979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067848709, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067848740, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067848773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067848784, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067850931, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067850971, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067851005, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067851017, "dur":3307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067854366, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067854404, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067854442, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251067854452, "dur":1581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251067856070, "dur":187859, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251068043930, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251068043989, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1710251068044001, "dur":1516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":4, "ts":1710251068045550, "dur":22035, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067757686, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067757686, "dur":4936, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067762623, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1710251067762744, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067762798, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067765919, "dur":912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1710251067766865, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1710251067766898, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067767050, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067767284, "dur":1715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":5, "ts":1710251067769044, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1710251067769081, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067769135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067769638, "dur":1045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1710251067770724, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1710251067770757, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067770785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067770794, "dur":2013, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1710251067772849, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1710251067772902, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067772933, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067772942, "dur":5714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":5, "ts":1710251067778697, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067778748, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067778772, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067778782, "dur":2667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067781496, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067781540, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067781572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067781586, "dur":2051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067783672, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067783714, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067783800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067783815, "dur":4917, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067788927, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067788964, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067789024, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067789033, "dur":4669, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067793757, "dur":166127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067959885, "dur":4474, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067964404, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1710251067964418, "dur":9736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1710251067974186, "dur":93157, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067757750, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067757751, "dur":4873, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067762625, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1710251067762751, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067762856, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067766133, "dur":4474, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":6, "ts":1710251067770826, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067770882, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067770939, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067771147, "dur":2488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067773673, "dur":67, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067773741, "dur":923, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067774679, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067776191, "dur":1867, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067778097, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067778143, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067778192, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067778249, "dur":3941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067782225, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067782263, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067782348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067782357, "dur":2223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067784615, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067784673, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067784771, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067784780, "dur":3688, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067788527, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067788607, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067788777, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067788789, "dur":2281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067791122, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067791167, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067791397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067791409, "dur":6671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067798121, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067798153, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067798250, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067798261, "dur":4866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067803161, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067803202, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067803274, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067803285, "dur":3963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067807322, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067807364, "dur":175, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067807546, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067807555, "dur":4467, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067812062, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067812096, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067812187, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067812197, "dur":5527, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067817761, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067817795, "dur":273, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067818077, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067818089, "dur":3736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067821859, "dur":135492, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067957352, "dur":3222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067960585, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067960600, "dur":6291, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1710251067966949, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1710251067966988, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067966999, "dur":1229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/resources.assets" }}
-,{ "pid":12345, "tid":6, "ts":1710251067968262, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1710251067968300, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067968312, "dur":2406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/level0" }}
-,{ "pid":12345, "tid":6, "ts":1710251067970758, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1710251067970864, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067970898, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1710251067970907, "dur":1159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1710251067972095, "dur":95268, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067757847, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067757848, "dur":4794, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067762643, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1710251067762719, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067762755, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067765380, "dur":4171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1710251067769589, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1710251067769631, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067769656, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067769968, "dur":1504, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":7, "ts":1710251067771504, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067771541, "dur":603, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067772167, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067772295, "dur":10047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067782381, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067782419, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067782522, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067782530, "dur":2618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067785186, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067785222, "dur":101, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067785329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067785461, "dur":3321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067788814, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067788847, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067788878, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067788885, "dur":2605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067791521, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067791554, "dur":1029, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067792601, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067792618, "dur":5642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067798301, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067798336, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067798397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067798405, "dur":2782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067801285, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067801330, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067801411, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067801423, "dur":3131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067804595, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067804633, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067804767, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067804777, "dur":4481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067809299, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067809334, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067809434, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067809475, "dur":6628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067816143, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067816182, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067816355, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067816390, "dur":3839, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067820259, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067820288, "dur":328, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067820626, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067820637, "dur":6181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067826880, "dur":128867, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067955748, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067955834, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067955867, "dur":13613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1710251067969516, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1710251067969554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1710251067969563, "dur":2214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":7, "ts":1710251067971808, "dur":95648, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067757915, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067757916, "dur":4702, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067762623, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1710251067762754, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067762833, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067766192, "dur":1512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1710251067767735, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1710251067767785, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067767844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067767852, "dur":1720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1710251067769606, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1710251067769639, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067769666, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067769994, "dur":2888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1710251067772923, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame.exe" }}
-,{ "pid":12345, "tid":8, "ts":1710251067772970, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067773007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067773014, "dur":8963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame.exe" }}
-,{ "pid":12345, "tid":8, "ts":1710251067782019, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067782059, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067782094, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067782104, "dur":2221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067784402, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067784456, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067784528, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067784541, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067786560, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067786601, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067786804, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067786817, "dur":2970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067789859, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067789899, "dur":357, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067790269, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067790285, "dur":6334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067796666, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067796710, "dur":1132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067797854, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067797868, "dur":3042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067800949, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067800985, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067801075, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067801083, "dur":2991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067804110, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067804151, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067804230, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067804240, "dur":3877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067808192, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067808369, "dur":245, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067808623, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067808634, "dur":4156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067812824, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067812870, "dur":680, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067813563, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067813580, "dur":2872, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067816494, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067816530, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067816611, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067816619, "dur":3462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067820115, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067820148, "dur":503, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067820656, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251067820663, "dur":6254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251067826959, "dur":238664, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251068065624, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251068065704, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1710251068065717, "dur":1542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintsBuilds/IslandGame_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":8, "ts":1710251068067295, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":8, "ts":1710251068067298, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1710251068073167, "dur":3632, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1710251068108788, "dur": 875, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1710251068108664, "dur": 1030, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1710411795897596, "dur":1811, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411795899414, "dur":34, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1710411795899463, "dur":13, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1710411795899476, "dur":330, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1710411795899837, "dur":672, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411795900509, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259049, "dur":180, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259229, "dur":114, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259343, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259345, "dur":13, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259358, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259359, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259365, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259368, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259379, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259381, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259387, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259389, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259396, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259397, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259403, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259405, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259410, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259435, "dur":3, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796259458, "dur":2294, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1710411795900325, "dur":211, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795900537, "dur":4589, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795905127, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1710411795905329, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795926851, "dur":6773, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1710411795933667, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795933832, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795933843, "dur":4828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795938704, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795938844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795938851, "dur":5376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795944267, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795944403, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795944412, "dur":11099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795955588, "dur":576, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795956172, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795956185, "dur":6948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795963177, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795963303, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795963310, "dur":4254, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795967606, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795967644, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795967652, "dur":5951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795973646, "dur":252, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795973903, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795973911, "dur":3120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795977072, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795977220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795977230, "dur":3143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795980413, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795980544, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795980553, "dur":2807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795983397, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795983514, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411795983522, "dur":3056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411795986619, "dur":132754, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411796119381, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1710411796119393, "dur":1469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1710411796120897, "dur":138161, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795900596, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795900597, "dur":4431, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795905029, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1710411795905280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795924028, "dur":7635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1710411795931714, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795931880, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795932686, "dur":5943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795938670, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795938827, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795938836, "dur":5046, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795943929, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795944067, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795944077, "dur":4070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795948192, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795948354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795948364, "dur":15326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795963734, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795963890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795963897, "dur":4423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795968411, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795968556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795968565, "dur":5473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795974082, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795974124, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795974131, "dur":3594, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795977766, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795977884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795977893, "dur":4532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795982488, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795982629, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795982640, "dur":3081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795985761, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795985957, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795985964, "dur":4184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795990187, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795990311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795990320, "dur":8152, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795998507, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411795998634, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411795998643, "dur":4548, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796003230, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796003367, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796003376, "dur":2996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796006434, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796006477, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796006485, "dur":6037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796012559, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796012720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796012729, "dur":1789, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796014560, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796014671, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796014679, "dur":1771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796016490, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796016617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796016626, "dur":12302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796028967, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796029095, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796029104, "dur":6432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796035576, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796035694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796035702, "dur":2159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796037900, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796038049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796038059, "dur":1767, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796039867, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796039979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796039987, "dur":49924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796089951, "dur":53092, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796143051, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1710411796143090, "dur":1719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1710411796144846, "dur":114209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795900445, "dur":104, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795900549, "dur":4456, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795905007, "dur":267, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1710411795905279, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795924059, "dur":2631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1710411795926731, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame.exe" }}
+,{ "pid":12345, "tid":3, "ts":1710411795926770, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795926775, "dur":2335, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame.exe" }}
+,{ "pid":12345, "tid":3, "ts":1710411795929147, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795929381, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795930433, "dur":5619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795936093, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795936219, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795936229, "dur":4772, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795941038, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795941175, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795941184, "dur":3953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795945198, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795945298, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795945305, "dur":5251, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795950601, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795950743, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795950754, "dur":6060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795956857, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795957014, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795957022, "dur":6566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795963627, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795963738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795963745, "dur":4732, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795968549, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795968591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795968598, "dur":5538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795974180, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795974303, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795974310, "dur":4018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795978367, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795978497, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795978505, "dur":3912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795982529, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795982638, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795982645, "dur":3044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795985729, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795985854, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411795985863, "dur":2365, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411795988266, "dur":100667, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411796088942, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411796088972, "dur":2372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1710411796091385, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1710411796091427, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411796091475, "dur":1931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":3, "ts":1710411796093445, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1710411796093483, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411796093491, "dur":2131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1710411796095661, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1710411796095786, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411796095795, "dur":2756, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1710411796098585, "dur":10046, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1710411796108637, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1710411796108646, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":3, "ts":1710411796110817, "dur":148236, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795900526, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795900527, "dur":4449, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795904987, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1710411795904991, "dur":207, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795905205, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1710411795905214, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795906097, "dur":3453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1710411795909558, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1710411795909709, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795910095, "dur":1795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1710411795911917, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1710411795912052, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795912533, "dur":979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1710411795913544, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1710411795913671, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795913680, "dur":1742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1710411795915451, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1710411795915577, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795915586, "dur":1849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1710411795917468, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795917610, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795917662, "dur":22843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795940547, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795940718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795940728, "dur":3638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795944438, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795944574, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795944582, "dur":4468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795949099, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795949235, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795949246, "dur":7102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795956391, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795956636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795956645, "dur":6308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795963000, "dur":179, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795963185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795963194, "dur":4106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795967342, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795967467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795967477, "dur":3261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795970770, "dur":82, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795970855, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795970861, "dur":4181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795975081, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795975200, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795975208, "dur":4845, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795980091, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795980370, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411795980381, "dur":5502, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411795985923, "dur":105177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411796091109, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796091121, "dur":1629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":4, "ts":1710411796092826, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1710411796092866, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796092874, "dur":9724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1710411796102636, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1710411796102671, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796102679, "dur":1382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":4, "ts":1710411796104098, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1710411796104136, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796104169, "dur":1171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1710411796105376, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1710411796105412, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796105420, "dur":1632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1710411796107093, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1710411796107130, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796107139, "dur":1315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":4, "ts":1710411796108494, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1710411796108533, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796108542, "dur":1285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":4, "ts":1710411796109865, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1710411796109980, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1710411796109987, "dur":1079, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1710411796111106, "dur":147939, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795900672, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795900672, "dur":4313, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795904990, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1710411795905228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795906851, "dur":2798, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1710411795909678, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1710411795909790, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795910102, "dur":2192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1710411795912327, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1710411795912415, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795912492, "dur":1856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1710411795914380, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1710411795914515, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795914523, "dur":1538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1710411795916091, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795916189, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795916382, "dur":2635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795919053, "dur":533, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795919592, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795919600, "dur":40685, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795960328, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795960480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795960489, "dur":4391, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795964917, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795965063, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795965073, "dur":3443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795968563, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795968697, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795968706, "dur":5350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795974099, "dur":138, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795974240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795974248, "dur":3933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795978222, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795978337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795978345, "dur":4249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795982644, "dur":189, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795982838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411795982847, "dur":3746, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411795986639, "dur":122608, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411796109254, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1710411796109266, "dur":1844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1710411796111146, "dur":147895, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795900748, "dur":1, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795900749, "dur":4259, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795905010, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1710411795905246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795922747, "dur":7394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":6, "ts":1710411795930189, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795930342, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795930430, "dur":8147, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795938628, "dur":175, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795938807, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795938816, "dur":6172, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795945023, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795945127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795945135, "dur":5617, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795950793, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795950934, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795950942, "dur":5984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795956966, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795957063, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795957113, "dur":6853, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795966084, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795966274, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795966286, "dur":4192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795970509, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795970609, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795970615, "dur":3635, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795974285, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795974390, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795974396, "dur":3967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795978397, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795978522, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795978528, "dur":4970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795983561, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795983603, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411795983612, "dur":5203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411795988852, "dur":252490, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411796241348, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1710411796241358, "dur":1483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":6, "ts":1710411796242873, "dur":16176, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795900819, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795900819, "dur":4193, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795905013, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1710411795905232, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795907243, "dur":2411, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1710411795909681, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1710411795909811, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795910120, "dur":1730, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1710411795911878, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1710411795912002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795912062, "dur":1585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1710411795913680, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1710411795913766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795913771, "dur":1665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1710411795915462, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1710411795915663, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795915669, "dur":3394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":7, "ts":1710411795919094, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1710411795919228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795919234, "dur":7753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1710411795927034, "dur":580, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1710411795927633, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795928148, "dur":13117, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1710411795941311, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795941455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795941463, "dur":3856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795945380, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795945508, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795945514, "dur":5299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795950854, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795950996, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795951004, "dur":6979, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795958034, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795958169, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795958180, "dur":5115, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795963347, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795963733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795963744, "dur":6618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795970401, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795970533, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795970541, "dur":4611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795975192, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795975275, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795975281, "dur":8920, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795984238, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795984363, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795984372, "dur":3136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795987550, "dur":371, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795987928, "dur":6, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795987944, "dur":9067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795997079, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411795997245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411795997255, "dur":9090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796006402, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796006446, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796006455, "dur":2630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796009123, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796009247, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796009257, "dur":1887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796011177, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796011286, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796011294, "dur":3166, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796014508, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796014632, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796014641, "dur":1826, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796016506, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796016617, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796016627, "dur":14775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796031443, "dur":265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796031713, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796031724, "dur":3666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796035437, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796035570, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796035580, "dur":4137, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796039759, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796039884, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796039894, "dur":3001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796042935, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796043060, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796043070, "dur":46005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796089119, "dur":168533, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796257658, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1710411796257670, "dur":1307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":7, "ts":1710411796259008, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1710411796259011, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795900895, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795900896, "dur":4136, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795905034, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1710411795905291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795925996, "dur":5881, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1710411795931922, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795932028, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795932725, "dur":6216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795938975, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795939073, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795939080, "dur":5133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795944348, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795944467, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411795944474, "dur":5001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411795949520, "dur":161800, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411796111326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1710411796111335, "dur":1472, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/lasse/Downloads/TestBuild/IslandGame_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1710411796112843, "dur":146199, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1710411796263547, "dur":2253, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1710411796284540, "dur": 791, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1710411796284064, "dur": 1297, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -1,0 +1,1377 @@
+fileFormatVersion: 2
+guid: 8431adcbdb911b449a1c9848f2849047
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 31
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Beach-tileset (5)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c73f19d656b4445b639f98fc35a009
+      internalID: -1557142073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 834.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aca7e29c678d6c449108652664a4628
+      internalID: 1497359440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 805.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197eb55f964db5b41850a80a674eded2
+      internalID: -477890921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 805.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25bdcadc46190a4a9eae9e952909dd5
+      internalID: 346742620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 776.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e1a3f5fbf36a4e949a7183eec53a2
+      internalID: 1361267089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 776.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b04ae1176ae2a14ebd6bac67315d2e1
+      internalID: 921675723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 747.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03140954a88d9ac48830a87f8f4195a2
+      internalID: 1643875850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 747.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c371f9517f27604799553efca24c92f
+      internalID: -625311145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 718.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7160af08108d0e64dab281b7a7a18046
+      internalID: -1603045319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 718.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f2a26c382840541b0577f5b357cb00
+      internalID: 594419457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 689.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ace709950b9f245885c73eec5fc7c9
+      internalID: -1541582110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 689.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840e3e123b4f79f47b064e7a174bb91b
+      internalID: 707099961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75a1e9f3f69ddb46a87b45011e7d3cb
+      internalID: 918436773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 660.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdb4f033ccabad44825c85bfe05c3b2
+      internalID: 1583092117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 631.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2d1200401b6d5489f4a96bf1879680
+      internalID: -1283593806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 631.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d07634fd228e842887e006f263cef8
+      internalID: 1609594131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acc28a1a028a5c44b95ab5c3e42fa05
+      internalID: -1659553184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 602.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2991f5d3e346e3c469efda08f7e2dd40
+      internalID: 1572527829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 573.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26310602ef4609745b0d92194f28a8c5
+      internalID: 1226810105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 573.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6547cf609de996d43aedbeb154b54341
+      internalID: -763117091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 544.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8935d98cdebf064f8f54eee81a43c7e
+      internalID: -1583697253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 515.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e679e401f6f08419c5fd3cc4626c2b
+      internalID: 1202336772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 515.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03209f62ce7a2384eb425a6601c6893c
+      internalID: 806135610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c4f4bf5f8189e4c9ef654dc14658fe
+      internalID: -1160671412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 486.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6c82939cccb4846948212498a85161
+      internalID: -2069719824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 457.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad048738cb0dd94d8465449ea3019df
+      internalID: -1031793006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 457.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6db88a467801054fbd51ad73ebe959b
+      internalID: -1119781057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25c49f7591cbdf4c81605be47e546cf
+      internalID: -22516881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 428.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc27ac498aa5234a859e0e336beb9f2
+      internalID: 1681376343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33db63f8a93a4dd4191144fc18124391
+      internalID: -1312583847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 399.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5409490e053e75a46ac028fed3d4a487
+      internalID: 1360186690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c612c4794622cc5438710e924a1b9316
+      internalID: -2005535653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 370.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6738ad8dd08338b4a978a916c40762b7
+      internalID: -1523020507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 341.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb333267c8542ab46a47b0e360623e36
+      internalID: 583519931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 341.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a508d44c625fac848bd053b29d710d48
+      internalID: 1572484661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec4c35fd18b1bc418817f8d0e87228b
+      internalID: 1497479029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 312.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1eaba812e4c494dae1cbd82d6e0b6b
+      internalID: 422808687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 283.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c0229ccfff9764ab76dceb67973592
+      internalID: 1288027063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_38
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 283.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a03b8f59837bb4cb496c0ed2d66d13
+      internalID: 582384354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 254.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc79a14e9288f04ea565c8a18ea73ef
+      internalID: 658349475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 254.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177ee922a2bcd6d40b69496c76400579
+      internalID: -131648584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072136dfd75cad24da37692907a9a11c
+      internalID: -89327868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 225.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 751fd4c853f9c184385d70baf01bd714
+      internalID: 294485902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3212be00b1c14c94c91fccb4af74ccb4
+      internalID: -844317302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 196.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1f900295e6f2140ab2ec90161dfad5
+      internalID: -1476744887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 167.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9a81ded8f64db49aa0608d14659f91
+      internalID: -1067469699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 167.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbcb6dfe880cf9e45807be049344b70c
+      internalID: -1967335793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 138.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50b2b41c4bb70d4180e1df0b1f6353a
+      internalID: -1598374852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_48
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 138.2069
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6865740daa772469150d30013d98d2
+      internalID: -641927393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c34a6716109614f9a3f30ed4c795e1
+      internalID: -1525881340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 109.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ef7de2e56b2044293defe08c71e88f
+      internalID: -640491662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9968095a2a7dc5418ca5b517aaac4b3
+      internalID: 1462430489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_52
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc05d686b0c936f43b09204364e7a2df
+      internalID: 1214483161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_53
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 51.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eadbf09f8c83e641a09cd3c6d79ce8b
+      internalID: 1944325577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_54
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 51.206894
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c7619e98b8a8a44a1d2fc6063ee923
+      internalID: -1304652044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22.206896
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1a0b7ff30a7cd4897638f4bfd25df7
+      internalID: -1630661241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Beach-tileset (5)_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 22.206896
+        width: 32
+        height: 29.793104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e898ea276c07f4d915bab081c9b030
+      internalID: 1770335126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ff3391bed0ab9e244b0a875c7978ab91
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Beach-tileset (5)_0: -1557142073
+      Beach-tileset (5)_1: 1497359440
+      Beach-tileset (5)_10: -1541582110
+      Beach-tileset (5)_11: 707099961
+      Beach-tileset (5)_12: 918436773
+      Beach-tileset (5)_13: 1583092117
+      Beach-tileset (5)_14: -1283593806
+      Beach-tileset (5)_15: 1609594131
+      Beach-tileset (5)_16: -1659553184
+      Beach-tileset (5)_17: 1572527829
+      Beach-tileset (5)_18: 1226810105
+      Beach-tileset (5)_19: -763117091
+      Beach-tileset (5)_2: -477890921
+      Beach-tileset (5)_20: -1583697253
+      Beach-tileset (5)_21: 1202336772
+      Beach-tileset (5)_22: 806135610
+      Beach-tileset (5)_23: -1160671412
+      Beach-tileset (5)_24: -2069719824
+      Beach-tileset (5)_25: -1031793006
+      Beach-tileset (5)_26: -1119781057
+      Beach-tileset (5)_27: -22516881
+      Beach-tileset (5)_28: 1681376343
+      Beach-tileset (5)_29: -1312583847
+      Beach-tileset (5)_3: 346742620
+      Beach-tileset (5)_30: 1360186690
+      Beach-tileset (5)_31: -2005535653
+      Beach-tileset (5)_32: -1523020507
+      Beach-tileset (5)_33: 583519931
+      Beach-tileset (5)_34: 1572484661
+      Beach-tileset (5)_35: 1497479029
+      Beach-tileset (5)_36: 422808687
+      Beach-tileset (5)_37: 1288027063
+      Beach-tileset (5)_38: 582384354
+      Beach-tileset (5)_39: 658349475
+      Beach-tileset (5)_4: 1361267089
+      Beach-tileset (5)_40: -131648584
+      Beach-tileset (5)_41: -89327868
+      Beach-tileset (5)_42: 294485902
+      Beach-tileset (5)_43: -844317302
+      Beach-tileset (5)_44: -1476744887
+      Beach-tileset (5)_45: -1067469699
+      Beach-tileset (5)_46: -1967335793
+      Beach-tileset (5)_47: -1598374852
+      Beach-tileset (5)_48: -641927393
+      Beach-tileset (5)_49: -1525881340
+      Beach-tileset (5)_5: 921675723
+      Beach-tileset (5)_50: -640491662
+      Beach-tileset (5)_51: 1462430489
+      Beach-tileset (5)_52: 1214483161
+      Beach-tileset (5)_53: 1944325577
+      Beach-tileset (5)_54: -1304652044
+      Beach-tileset (5)_55: -1630661241
+      Beach-tileset (5)_56: 1770335126
+      Beach-tileset (5)_6: 1643875850
+      Beach-tileset (5)_7: -625311145
+      Beach-tileset (5)_8: -1603045319
+      Beach-tileset (5)_9: 594419457
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,44 +5,33 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     public float speed;
-    float normalSpeed;
     Rigidbody2D rb;
+    Vector2 move;
     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        normalSpeed = speed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rb.velocity);
-        float inputX = Input.GetAxisRaw("Horizontal");
-        float inputY = Input.GetAxisRaw("Vertical");
+
+        //float inputX = Input.GetAxisRaw("Horizontal");
+        //float inputY = Input.GetAxisRaw("Vertical");
+
 
         
-        if(inputX != 0 && inputY != 0)
-        {
-            speed = normalSpeed;
-        }
-        else
-        {
-            speed = normalSpeed;
-        }
-        if(rb.velocity.y == 0)
-        {
-            rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-        }
-        if (rb.velocity.x == 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, inputY * speed);
-        }
+        Debug.Log(rb.velocity);
         whichWayAmILooking();
-        //rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-        //rb.velocity = new Vector2(rb.velocity.x, inputY * speed);
+    }
+
+    private void FixedUpdate()
+    {
+        move = new Vector2(Input.GetAxisRaw("Horizontal"),  Input.GetAxisRaw("Vertical"));
+        rb.velocity = move.normalized*speed*Time.deltaTime;
     }
 
 
@@ -64,6 +53,22 @@ public class movement : MonoBehaviour
         else if (rb.velocity.x == 0 && rb.velocity.y > 0)
         {
             anim.Play("anim_backwardWalk");
+        }
+        else if (rb.velocity.x < 0 && rb.velocity.y > 0)
+        {
+            anim.Play("anim_diagUpLeft");
+        }
+        else if (rb.velocity.x > 0 && rb.velocity.y > 0)
+        {
+            anim.Play("anim_diagUpRight");
+        }
+        else if (rb.velocity.x < 0 && rb.velocity.y < 0)
+        {
+            anim.Play("anim_diagDownLeft");
+        }
+        else if (rb.velocity.x > 0 && rb.velocity.y < 0)
+        {
+            anim.Play("anim_diagDownRight");
         }
         else
         {

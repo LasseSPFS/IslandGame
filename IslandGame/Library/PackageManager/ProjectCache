@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638458387580984903
-    m_Hash: 2305778826
+      ticks: 638460087926603331
+    m_Hash: 3160307380
   m_LockFileStatus:
     m_FilePath: C:/Users/lasse/OneDrive/Dokumenter/GitHub/IslandGame/IslandGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638458387581145943
-    m_Hash: 2795160780
+      ticks: 638460087926769907
+    m_Hash: 2520769967
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -22,6 +22,83 @@ m_LocalPackages:
 m_ProjectPath: C:/Users/lasse/OneDrive/Dokumenter/GitHub/IslandGame/IslandGame/Packages
 m_EditorVersion: 2021.3.23f1 (213b516bf396)
 m_ResolvedPackages:
+- packageId: com.unity.2d.pixel-perfect@5.0.3
+  testable: 0
+  isDirectDependency: 1
+  version: 5.0.3
+  source: 1
+  resolvedPath: C:\Users\lasse\OneDrive\Dokumenter\GitHub\IslandGame\IslandGame\Library\PackageCache\com.unity.2d.pixel-perfect@5.0.3
+  assetPath: Packages/com.unity.2d.pixel-perfect
+  name: com.unity.2d.pixel-perfect
+  displayName: 2D Pixel Perfect
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: tool
+  description: 'The 2D Pixel Perfect package contains the Pixel Perfect Camera component
+    which ensures your pixel art remains crisp and clear at different resolutions,
+    and stable in motion.
+
+
+    It is a single component that makes all the calculations
+    needed to scale the viewport with resolution changes, removing the hassle from
+    the user. The user can adjust the definition of the pixel art rendered within
+    the camera viewport through the component settings, as well preview any changes
+    immediately in Game view by using the Run in Edit Mode feature.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview
+    - 1.0.1-preview
+    - 2.0.2
+    - 2.0.3
+    - 2.0.4
+    - 2.1.0
+    - 3.0.0
+    - 3.0.1
+    - 3.0.2
+    - 4.0.0
+    - 4.0.1
+    - 5.0.0-pre.1
+    - 5.0.0-pre.2
+    - 5.0.0
+    - 5.0.1
+    - 5.0.2
+    - 5.0.3
+    compatible:
+    - 5.0.3
+    verified: 5.0.3
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - pixel
+  - perfect
+  - 2D
+  - sprite
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638023910590000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/2d.git
+    revision: 6dea8ac5bd6953acd64f1ac9d470912954b0c015
+    path: 
+  unityLifecycle:
+    version: 5.0.3
+    nextVersion: 
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
   isDirectDependency: 1
@@ -53,6 +130,57 @@ m_ResolvedPackages:
   - 2d
   - sprite
   - sprite editor window
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 1.0.0
+    nextVersion: 
+- packageId: com.unity.2d.tilemap@1.0.0
+  testable: 0
+  isDirectDependency: 1
+  version: 1.0.0
+  source: 2
+  resolvedPath: C:\Users\lasse\OneDrive\Dokumenter\GitHub\IslandGame\IslandGame\Library\PackageCache\com.unity.2d.tilemap@1.0.0
+  assetPath: Packages/com.unity.2d.tilemap
+  name: com.unity.2d.tilemap
+  displayName: 2D Tilemap Editor
+  author:
+    name: 
+    email: 
+    url: 
+  category: 2D
+  type: 
+  description: 2D Tilemap Editor is a package that contains editor functionalities
+    for editing Tilemaps.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0
+    compatible:
+    - 1.0.0
+    verified: 1.0.0
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - 2d
+  - Tilemap
   registry:
     id: main
     name: 

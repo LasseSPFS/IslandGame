@@ -8,6 +8,8 @@ public class days : MonoBehaviour
     public int timeslot = 1;
     public Image timeSlur;
     public GameObject playerUI;
+    public TextMeshProUGUI tidOgTid;
+    int dag;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +20,7 @@ public class days : MonoBehaviour
 
     void Update()
     {
+        clockController();
         if (Input.GetKeyUp(KeyCode.K))
         {
             progresstime();
@@ -86,6 +89,18 @@ public class days : MonoBehaviour
             return false;
         }
 
+    }
+
+    public void clockController()
+    {
+        if(itsMorning())
+        {
+            tidOgTid.text = "Dag: " + dag + "\n" + "Tid på dagen:"+"\n" + "Morgen";
+        }
+        else
+        {
+            tidOgTid.text = "wori,ig";
+        }
     }
 
     IEnumerator wait()
