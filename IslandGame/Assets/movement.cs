@@ -24,7 +24,6 @@ public class movement : MonoBehaviour
 
 
         
-        Debug.Log(rb.velocity);
         whichWayAmILooking();
     }
 

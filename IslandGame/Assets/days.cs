@@ -9,7 +9,7 @@ public class days : MonoBehaviour
     public Image timeSlur;
     public GameObject playerUI;
     public TextMeshProUGUI tidOgTid;
-    int dag;
+    public int dag;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +78,7 @@ public class days : MonoBehaviour
         }
 
     }
+
     public bool itsEvening()
     {
         if (timeslot % 3 == 0)
@@ -93,9 +94,18 @@ public class days : MonoBehaviour
 
     public void clockController()
     {
+        dag = timeslot / 3;
         if(itsMorning())
         {
             tidOgTid.text = "Dag: " + dag + "\n" + "Tid på dagen:"+"\n" + "Morgen";
+        }
+        else if (itsDay())
+        {
+            tidOgTid.text = "Dag: " + dag + "\n" + "Tid på dagen:" + "\n" + "Middag";
+        }
+        else if (itsEvening())
+        {
+            tidOgTid.text = "Dag: " + dag + "\n" + "Tid på dagen:" + "\n" + "Aften";
         }
         else
         {

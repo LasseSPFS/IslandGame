@@ -15,11 +15,11 @@ public class npcDialogScript : MonoBehaviour
 
     public string[] playerActivityDeskription;
     [HideInInspector] public string[] activeDialog;
-    public Dictionary<int, string[]> Activities = new Dictionary<int, string[]>();
     public string[] dag1;
     public string[] middag;
     public string[] aften;
     public string[] morgen;
+    public string[] activity1;
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
@@ -32,18 +32,24 @@ public class npcDialogScript : MonoBehaviour
     public bool isPlayerClose;
     public bool isLocked;
     public bool activatedActivity;
-    days _days; 
+    public bool isMorningAndDaySame;
+    public bool unusualCon;
+    days _days;
 
 
     // Days er kaldt fra klassen days, der styrer, hvorlangt i spillet man er. Spillet starter på 1 og slutter på 20
     void Start()
     {
-     
-        dialogPanel.SetActive(false);   
+        dialogPanel.SetActive(false);
         _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
         answer = 0;
         activeDialog = dag1;
+
+        if (isMorningAndDaySame)
+        {
+            morgen = middag;
+        }
     }
 
     // Update is called once per frame
@@ -52,6 +58,7 @@ public class npcDialogScript : MonoBehaviour
         //tjekker om spilleren er tæt på NPC'en og om spilleren klikke E
         if (Input.GetKeyDown(KeyCode.E) && isPlayerClose)
         {
+
             //Hvis textbox allerede er aktivt så deaktivere det
             if (dialogPanel.activeInHierarchy)
             {
@@ -59,23 +66,22 @@ public class npcDialogScript : MonoBehaviour
             }
             //Ellers aktiver dialogpanel og begynd Coroutine 
             else
-            {               
-              dialogPanel.SetActive(true);
-              fortsæt.SetActive(false);
-              decline.SetActive(false);
-              accept.SetActive(false);
+            {
+                dialogPanel.SetActive(true);
+                fortsæt.SetActive(false);
+                decline.SetActive(false);
+                accept.SetActive(false);
 
-              StartCoroutine(Typing(activeDialog));     
+                StartCoroutine(Typing(activeDialog));
             }
         }
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
-            if (dialogText.text == activeDialog[index])
-            {
-                fortsæt.SetActive(true);
-            }
-         
-
-        if(_days.itsMorning() == true)
+        if (dialogText.text == activeDialog[index])
+        {
+            fortsæt.SetActive(true);
+        }
+        Debug.Log(dialogText.text + " " + activeDialog[index]);
+        if (_days.itsMorning() == true)
         {
             transform.localPosition = locations[0];
         }
@@ -98,21 +104,21 @@ public class npcDialogScript : MonoBehaviour
         {
             index++;
             dialogText.text = "";
-            StartCoroutine(Typing(activeDialog));            
+            StartCoroutine(Typing(activeDialog));
         }
         else
         {
             zeroText();
-            
+
         }
     }
 
     //Bruges til at fjerne dialogboxen og gøre den klar til næste gang den skal bruges
     public void zeroText()
-    {         
-        dialogText.text = "";         
+    {
+        dialogText.text = "";
         index = 0;
-       
+
         dialogPanel.SetActive(false);
         if (activatedActivity == true)
         {
@@ -136,19 +142,20 @@ public class npcDialogScript : MonoBehaviour
     // Hvad der køres når du klikker accept
     public void acceptAnswer()
     {
-
-        activeDialog = acceptAnswers;
         decline.SetActive(false);
         accept.SetActive(false);
         fortsæt.SetActive(false);
         index = 0;
         dialogText.text = "";
+        activeDialog = acceptAnswers;
+        UpdateDialogueText();
         StartCoroutine(Typing(activeDialog));
     }
 
     public void declineAnswer()
-    {      
+    {
         activeDialog = declinAnswers;
+        UpdateDialogueText();
         decline.SetActive(false);
         accept.SetActive(false);
         fortsæt.SetActive(false);
@@ -157,11 +164,11 @@ public class npcDialogScript : MonoBehaviour
         StartCoroutine(Typing(activeDialog));
     }
 
-    
+
 
 
     //skriver hvad der står i dialogen ud i tekstfeltet et bogstav afgangen 
-    IEnumerator Typing( string[] dialog)
+    IEnumerator Typing(string[] dialog)
     {
         foreach (char Bogstav in dialog[index].ToCharArray())
         {
@@ -172,7 +179,12 @@ public class npcDialogScript : MonoBehaviour
                 {
                     choice();
                 }
-                else if(Bogstav.ToString() == "$")
+                else if (Bogstav.ToString() == "£")
+                {
+                    activeDialog = activity1;
+                    UpdateDialogueText();
+                }
+                else if (Bogstav.ToString() == "$")
                 {
                     NPCLevel += 1;
                     activatedActivity = true;
@@ -181,9 +193,9 @@ public class npcDialogScript : MonoBehaviour
                 {
                     dialogText.text += Bogstav;
                 }
-                
+
                 yield return new WaitForSeconds(wordSpeed);
-                
+
             }
             else
             {
@@ -191,6 +203,21 @@ public class npcDialogScript : MonoBehaviour
             }
         }
     }
+
+    void UpdateDialogueText()
+    {
+        // Update the text displayed in the dialog panel
+        if (dialogPanel.activeSelf)
+        {
+            dialogText.text = activeDialog[index];
+        }
+    }
+
+    public string[] ActiveDialog()
+    {
+        return activeDialog;
+    }
+
 
     //Hvis spilleren kommer tæt 
     private void OnTriggerEnter2D(Collider2D collision)
