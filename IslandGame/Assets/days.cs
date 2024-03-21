@@ -10,6 +10,7 @@ public class days : MonoBehaviour
     public GameObject playerUI;
     public TextMeshProUGUI tidOgTid;
     public int dag;
+    public NPCDagManager npcMan;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +21,12 @@ public class days : MonoBehaviour
 
     void Update()
     {
+        
         clockController();
         if (Input.GetKeyUp(KeyCode.K))
         {
             progresstime();
+            npcMan.secondDay();
         }
     }
 

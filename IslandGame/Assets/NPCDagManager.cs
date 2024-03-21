@@ -14,20 +14,25 @@ public class NPCDagManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        secondDay();
+       
     }
     public void secondDay()
     {
+        
         if(_days.timeslot > 2)
         {
             if(_days.itsDay() == true)
             {
                 foreach (Transform child in transform)
                 {
-                    if(child.gameObject.GetComponent<npcDialogScript>().middag[0] != null)
+                    if(child.gameObject.GetComponent<npcDialogScript>().middag[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0 )
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag;
-                    }             
+                    }
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag2;
+                    }
                 }
             }
 
@@ -35,9 +40,13 @@ public class NPCDagManager : MonoBehaviour
             {
                 foreach (Transform child in transform)
                 {
-                    if (child.gameObject.GetComponent<npcDialogScript>().aften != null)
+                    if (child.gameObject.GetComponent<npcDialogScript>().aften != null &&  child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften;
+                    }
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften2;
                     }
                 }
             }
@@ -45,9 +54,14 @@ public class NPCDagManager : MonoBehaviour
             {
                 foreach (Transform child in transform)
                 {
-                    if (child.gameObject.GetComponent<npcDialogScript>().morgen[0] != null)
+                    if (child.gameObject.GetComponent<npcDialogScript>().morgen[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen;
+                    }
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen2;
+                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
                     }
                 }
             }
