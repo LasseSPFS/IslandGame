@@ -8,6 +8,7 @@ public class days : MonoBehaviour
     public int timeslot = 1;
     public Image timeSlur;
     public GameObject playerUI;
+    public GameObject surviveValg;
     public TextMeshProUGUI tidOgTid;
     public int dag;
     public NPCDagManager npcMan;
@@ -51,11 +52,7 @@ public class days : MonoBehaviour
             timeSlur.color = new Color32(0, 0, 0, 210);
         }
 
-        //fjern efter sprint 1
-        if(timeslot ==7)
-        {
-            Application.Quit();
-        }
+       
     }
      public bool itsMorning()
     {
@@ -119,6 +116,7 @@ public class days : MonoBehaviour
     IEnumerator wait()
     {
         timeSlur.color = new Color32(0, 0, 0, 255);
+    
         yield return new WaitForSeconds(5);
         playerUI.SetActive(false);
         if (timeslot % 3 == 1)

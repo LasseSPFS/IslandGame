@@ -13,7 +13,6 @@ public class npcDialogScript : MonoBehaviour
     public GameObject decline;
     public GameObject accept;
 
-    public string[] playerActivityDeskription;
     [HideInInspector] public string[] activeDialog;
     public string[] dag1;
     public string[] middag;
@@ -22,60 +21,63 @@ public class npcDialogScript : MonoBehaviour
     public string[] middag2;
     public string[] aften2;
     public string[] morgen2;
+    public string[] middag3;
+    public string[] aften3;
+    public string[] morgen3;
+    public string[] middag4;
+    public string[] aften4;
+    public string[] morgen4;
     public string[] activity1;
-    public string[] activity2;
+
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
     public string[] answer2;
+    public string[] answer3;
     public string[] done;
     public Vector2[] locations;
     private int index;
-    private int answer;
+    private int answer = 0;
     private int acceptIndex = 0;
     private int actNumber = 1;
     public int NPCLevel;
     public float wordSpeed;
-    public bool isPlayerClose;
-    public bool isLocked;
-    public bool activatedActivity;
+    private bool isPlayerClose;
+    private bool activatedActivity;
     public bool isMorningAndDaySame;
-    public bool unusualCon;
-    public bool checker;
     public bool activateAct1;
     public bool actDoneForTheDay;
-    List<string[]> actList;
     days _days;
 
 
     // Days er kaldt fra klassen days, der styrer, hvorlangt i spillet man er. Spillet starter på 1 og slutter på 20
     void Start()
     {
-        Debug.Log(actList);
         dialogPanel.SetActive(false);
         _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
-        answer = 0;
         activeDialog = dag1;
-
         if (isMorningAndDaySame)
         {
             morgen = middag;
             morgen2 = middag2;
+            middag3 = morgen3;
+            middag4 = morgen4;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(checker)
+        /*
+        if(NPCLevel ==2)
         {
-
+            foreach (var item in activeDialog) { Debug.Log(item.ToString()); }
         }
+        */
         //tjekker om spilleren er tæt på NPC'en og om spilleren klikke E
         if (Input.GetKeyDown(KeyCode.E) && isPlayerClose)
         {
-
             //Hvis textbox allerede er aktivt så deaktivere det
             if (dialogPanel.activeInHierarchy)
             {
@@ -97,7 +99,7 @@ public class npcDialogScript : MonoBehaviour
             }
         }
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
-        if (dialogText.text == activeDialog[index])
+        if (dialogText.text == activeDialog[index] && activeDialog != declinAnswers)
         {
             fortsæt.SetActive(true);
         }
@@ -132,15 +134,13 @@ public class npcDialogScript : MonoBehaviour
             {
                 index++;
             }
-          
-           
+               
             dialogText.text = "";
             StartCoroutine(Typing(activeDialog));
         }
         else
         {
             zeroText();
-
         }
     }
 
@@ -151,15 +151,15 @@ public class npcDialogScript : MonoBehaviour
         index = 0;
 
         dialogPanel.SetActive(false);
+        /*
         if (activatedActivity == true)
         {
             PlayerdialogPanel.SetActive(true);
-            PlayerdialogText.text = playerActivityDeskription[NPCLevel - 1];
             _days.daySwitch();
-            isLocked = true;
             activatedActivity = false;
             actDoneForTheDay = true;
         }
+        */
     }
 
     //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
@@ -177,9 +177,9 @@ public class npcDialogScript : MonoBehaviour
         decline.SetActive(false);
         accept.SetActive(false);
         fortsæt.SetActive(false);
-        index = acceptIndex;
+        index = NPCLevel;
         dialogText.text = "";
-        activeDialog[0] = acceptAnswers[NPCLevel];
+        activeDialog = acceptAnswers;
         StartCoroutine(Typing(activeDialog));
     }
 
@@ -190,7 +190,7 @@ public class npcDialogScript : MonoBehaviour
         accept.SetActive(false);
         fortsæt.SetActive(false);
         dialogText.text = "";
-        index = 0;
+        index = NPCLevel;
         StartCoroutine(Typing(activeDialog));
     }
 
@@ -202,11 +202,7 @@ public class npcDialogScript : MonoBehaviour
             actNumber++;
             return activity1;
         }
-        else if (act == 2)
-        {
-            actNumber++;
-            return activity2;
-        }
+       
         else return activeDialog;
 
     }
@@ -230,12 +226,14 @@ public class npcDialogScript : MonoBehaviour
               
                 if (Bogstav.ToString() == "@")
                 {
+                    Debug.Log("choice");
                     choice();
                 }             
                 else if (Bogstav.ToString() == "$")
                 {
                     NPCLevel += 1;
                     activatedActivity = true;
+                    StartCoroutine(wait());
                 }
                 else if (Bogstav.ToString() == "£")
                 {
@@ -256,7 +254,17 @@ public class npcDialogScript : MonoBehaviour
             }
         }
     }
-
+    //Make it not run when selecting survivors.
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(3);
+        dialogPanel.SetActive(false);
+        PlayerdialogPanel.SetActive(true);
+        _days.daySwitch();
+        activatedActivity = false;
+        actDoneForTheDay = true;
+        yield break;
+    }
     //Hvis spilleren kommer tæt 
     private void OnTriggerEnter2D(Collider2D collision)
     {
