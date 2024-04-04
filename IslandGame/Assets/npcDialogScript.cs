@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 public class npcDialogScript : MonoBehaviour
 {
+
+    [Header ("Acces objects")]
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
     public GameObject PlayerdialogPanel;
@@ -12,7 +14,9 @@ public class npcDialogScript : MonoBehaviour
     public GameObject fortsæt;
     public GameObject decline;
     public GameObject accept;
-
+    
+    [Space(50)]
+    [Header("Dialog")]
     [HideInInspector] public string[] activeDialog;
     public string[] dag1;
     public string[] middag;
@@ -28,13 +32,15 @@ public class npcDialogScript : MonoBehaviour
     public string[] aften4;
     public string[] morgen4;
     public string[] activity1;
-
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
-    public string[] answer2;
+    public string[] answer2; 
     public string[] answer3;
     public string[] done;
+    public string[] waitingForItem;
+
+    [Header ("Værdier")]
     public Vector2[] locations;
     private int index;
     private int answer = 0;
@@ -42,11 +48,14 @@ public class npcDialogScript : MonoBehaviour
     private int actNumber = 1;
     public int NPCLevel;
     public float wordSpeed;
+
+    [Header ("If")]
     private bool isPlayerClose;
     private bool activatedActivity;
     public bool isMorningAndDaySame;
     public bool activateAct1;
     public bool actDoneForTheDay;
+    public bool npcLockedUntilItem;
     days _days;
 
 
@@ -69,12 +78,14 @@ public class npcDialogScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if(NPCLevel ==2)
+        if (actDoneForTheDay)
         {
-            foreach (var item in activeDialog) { Debug.Log(item.ToString()); }
+            activeDialog = done;
         }
-        */
+        else if(npcLockedUntilItem)
+        {
+            activeDialog = waitingForItem;
+        }
         //tjekker om spilleren er tæt på NPC'en og om spilleren klikke E
         if (Input.GetKeyDown(KeyCode.E) && isPlayerClose)
         {
@@ -91,10 +102,6 @@ public class npcDialogScript : MonoBehaviour
                 fortsæt.SetActive(false);
                 decline.SetActive(false);
                 accept.SetActive(false);
-                if (actDoneForTheDay)
-                {                  
-                    activeDialog = done;                   
-                }
                 StartCoroutine(Typing(activeDialog));
             }
         }
@@ -151,7 +158,7 @@ public class npcDialogScript : MonoBehaviour
         index = 0;
 
         dialogPanel.SetActive(false);
-        /*
+        
         if (activatedActivity == true)
         {
             PlayerdialogPanel.SetActive(true);
@@ -159,7 +166,7 @@ public class npcDialogScript : MonoBehaviour
             activatedActivity = false;
             actDoneForTheDay = true;
         }
-        */
+        
     }
 
     //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
@@ -167,8 +174,8 @@ public class npcDialogScript : MonoBehaviour
     {
         decline.SetActive(true);
         accept.SetActive(true);
-        decline.GetComponentInChildren<TMP_Text>().text = answer1[answer];
-        accept.GetComponentInChildren<TMP_Text>().text = answer2[answer];
+        decline.GetComponentInChildren<TMP_Text>().text = answer1[NPCLevel];
+        accept.GetComponentInChildren<TMP_Text>().text = answer2[NPCLevel];
     }
 
     // Hvad der køres når du klikker accept
@@ -185,18 +192,17 @@ public class npcDialogScript : MonoBehaviour
 
     public void declineAnswer()
     {
-        activeDialog = declinAnswers;
         decline.SetActive(false);
         accept.SetActive(false);
         fortsæt.SetActive(false);
-        dialogText.text = "";
         index = NPCLevel;
+        dialogText.text = "";
+        activeDialog = declinAnswers;
         StartCoroutine(Typing(activeDialog));
     }
 
     public string[] whichAct(int act)
     {
-        Debug.Log(act);
         if (act == 1)
         {
             actNumber++;
@@ -204,7 +210,6 @@ public class npcDialogScript : MonoBehaviour
         }
        
         else return activeDialog;
-
     }
 
     public void actRunner()
@@ -226,14 +231,17 @@ public class npcDialogScript : MonoBehaviour
               
                 if (Bogstav.ToString() == "@")
                 {
-                    Debug.Log("choice");
                     choice();
                 }             
                 else if (Bogstav.ToString() == "$")
                 {
                     NPCLevel += 1;
                     activatedActivity = true;
-                    StartCoroutine(wait());
+                    //StartCoroutine(wait());
+                }
+                else if (Bogstav.ToString() == "#")
+                {
+                    npcLockedUntilItem = true;              
                 }
                 else if (Bogstav.ToString() == "£")
                 {
@@ -255,16 +263,24 @@ public class npcDialogScript : MonoBehaviour
         }
     }
     //Make it not run when selecting survivors.
+
+    /*
     IEnumerator wait()
     {
         yield return new WaitForSeconds(3);
         dialogPanel.SetActive(false);
         PlayerdialogPanel.SetActive(true);
+        Debug.Log(activeDialog[0]);
         _days.daySwitch();
+        index = NPCLevel - 1;
         activatedActivity = false;
         actDoneForTheDay = true;
+        activeDialog = done;
+        Debug.Log(activeDialog[0]);
         yield break;
     }
+
+    */
     //Hvis spilleren kommer tæt 
     private void OnTriggerEnter2D(Collider2D collision)
     {
