@@ -18,6 +18,9 @@ public class activityCaller : MonoBehaviour
     days _days;
     public bool donePicking = false;
 
+    [Header("Survivorpicker")]
+    public List<string> survivors; 
+
     public void Start()
     {
         _days = GameObject.Find("DayManager").GetComponent<days>();
@@ -69,19 +72,42 @@ public class activityCaller : MonoBehaviour
             timeSlur.color = new Color32(0, 0, 0, 255);
             Debug.Log("aktiverre");
             surviveValg.SetActive(true);
+            
             while (!donePicking)
             {
                 yield return null;
             }
             Debug.Log("del 2");
+            if (_days.timeslot % 3 == 1)
+            {
+                timeSlur.color = new Color32(255, 255, 255, 0);
+            }
+            else if (_days.timeslot % 3 == 2)
+            {
+                timeSlur.color = new Color32(255, 197, 42, 20);
+            }
+            else if (_days.timeslot % 3 == 0)
+            {
+                timeSlur.color = new Color32(0, 0, 0, 210);
+            }
             playerUI.SetActive(false);
             surviveValg.SetActive(false);
+            yield break;
         }
 
     }
 
-    public void changeDonePicking()
+    public void pickedSurvior(Button button)
     {
-        donePicking = true;    
+        if(survivors.Count < 2)
+        {          
+            survivors.Add(button.name);
+            if (survivors.Count == 2)
+            {
+                Debug.Log("done");
+                donePicking = true;
+            }
+            Debug.Log(survivors.Count);
+        }
     }
 }

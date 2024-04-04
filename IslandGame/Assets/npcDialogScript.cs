@@ -133,8 +133,7 @@ public class npcDialogScript : MonoBehaviour
         if (index < activeDialog.Length - 1)
         {
             if(activatedActivity)
-            {
-                
+            {              
                 activatedActivity = false;
             }
             else
