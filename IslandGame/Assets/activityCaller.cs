@@ -11,13 +11,16 @@ public class activityCaller : MonoBehaviour
     [Header("NPC'er")]
     public npcDialogScript eng;
     public npcDialogScript Træ;
+    public npcDialogScript dre;
+    public npcDialogScript skr;
     public Image timeSlur;
     public GameObject playerUI;
     public GameObject surviveValg;
     Inventory _inventory;
     days _days;
+    [Header("Bools")]
     public bool donePicking = false;
-
+    public bool chooseSnor = false;
     [Header("Survivorpicker")]
     public List<string> survivors; 
 
@@ -49,6 +52,54 @@ public class activityCaller : MonoBehaviour
         if (Træ.NPCLevel == 1)
         {
             playerTekst.text = "Mig og chris fældede få palmer og lavede planker";
+        }
+    }
+
+    public void hangoutSkræderSnor()
+    {
+        if (skr.NPCLevel == 0)
+        {
+            chooseSnor = true;
+            playerTekst.text = "Du brugte noget tid på at snakke med Emma om jeres plan";
+        }
+    }
+    public void hangoutSkræderStof()
+    {
+        if (skr.NPCLevel == 0)
+        {
+            playerTekst.text = "Du brugte noget tid på at snakke med Emma om jeres plan";
+        }
+        if (skr.NPCLevel == 1)
+        {
+            playerTekst.text = "Du gav Emma arbejds ro";
+        }
+        if (skr.NPCLevel == 2)
+        {
+            playerTekst.text = "Emma har gjordt sit arbejde, nu mangles bare fundementet og så har du en båd";
+            _inventory.gotBinding = true;
+        }
+    }
+    public void hangoutDreng()
+    {
+        if (dre.NPCLevel == 0)
+        {
+            if(skr.NPCLevel == 1 && chooseSnor)
+            {
+                playerTekst.text = "Dig og Tomas fandt pinde i form af strikke pinde mens i legede. Du beholdte dem til Emma";
+                skr.npcLockedUntilItem = false;
+                skr.middag2[0] = "Giv mig en dag til at flette noget snor sammen.€";
+            }
+            else if (skr.NPCLevel == 1 && chooseSnor == false)
+            {
+                playerTekst.text = "Dig og Tomas fandt en masse edderkopper og lavede garnnøjler ud af spindende mens i legede. Du beholdte dem til Emma";
+                skr.npcLockedUntilItem = false;
+                skr.middag2[0] = "Giv mig en dag til at ræde det ud og lave det til noget brugbart€";
+            }
+            else
+            {
+                playerTekst.text = "Du legede med tom";
+            }
+
         }
     }
     public void hangouteng()

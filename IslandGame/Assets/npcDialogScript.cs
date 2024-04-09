@@ -31,6 +31,8 @@ public class npcDialogScript : MonoBehaviour
     public string[] middag4;
     public string[] aften4;
     public string[] morgen4;
+    public string[] morgen5;
+    public string[] middag5;
     public string[] activity1;
     public string[] declinAnswers;
     public string[] acceptAnswers;
@@ -72,43 +74,39 @@ public class npcDialogScript : MonoBehaviour
             morgen2 = middag2;
             middag3 = morgen3;
             middag4 = morgen4;
+            middag5 = morgen5;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(gameObject.name + " er level: " + NPCLevel);
         if (actDoneForTheDay)
         {
             activeDialog = done;
         }
         else if(npcLockedUntilItem)
-        {
+        {           
             activeDialog = waitingForItem;
         }
         //tjekker om spilleren er tæt på NPC'en og om spilleren klikke E
-        if (Input.GetKeyDown(KeyCode.E) && isPlayerClose)
+        if (Input.GetKeyDown(KeyCode.E) && isPlayerClose && dialogPanel.activeInHierarchy == false)
         {
-            //Hvis textbox allerede er aktivt så deaktivere det
-            if (dialogPanel.activeInHierarchy)
-            {
-                zeroText();
-            }
-            
-            //Ellers aktiver dialogpanel og begynd Coroutine 
-            else
-            {
                 dialogPanel.SetActive(true);
                 fortsæt.SetActive(false);
                 decline.SetActive(false);
                 accept.SetActive(false);
                 StartCoroutine(Typing(activeDialog));
-            }
         }
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
         if (dialogText.text == activeDialog[index] && activeDialog != declinAnswers)
         {
             fortsæt.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                NextLine();
+            }
         }
         else 
         if (_days.itsMorning() == true)
@@ -128,6 +126,7 @@ public class npcDialogScript : MonoBehaviour
     //Funktion der køres, når der klikkes på fortsæt knappen 
     public void NextLine()
     {
+        
         fortsæt.SetActive(false);
         //Hvis det ikke er sidste textbox i dialogen Sætter vi teksten til ingenting og fylder den ud igen ved at starte en coroutine ellers køre den zero tekst.
         if (index < activeDialog.Length - 1)
@@ -240,12 +239,19 @@ public class npcDialogScript : MonoBehaviour
                 }
                 else if (Bogstav.ToString() == "#")
                 {
-                    npcLockedUntilItem = true;              
+                    index = 0;
+                    npcLockedUntilItem = true;   
+                    
                 }
                 else if (Bogstav.ToString() == "£")
                 {
 
                     actRunner();
+                }
+                else if (Bogstav.ToString() == "€")
+                {
+
+                    NPCLevel++;
                 }
                 else
                 {

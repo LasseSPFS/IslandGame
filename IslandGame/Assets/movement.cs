@@ -8,6 +8,7 @@ public class movement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 move;
     public Animator anim;
+    public bool allowedToMove = true;
 
     // Start is called before the first frame update
     void Start()
@@ -29,8 +30,12 @@ public class movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        move = new Vector2(Input.GetAxisRaw("Horizontal"),  Input.GetAxisRaw("Vertical"));
-        rb.velocity = move.normalized*speed*Time.deltaTime;
+        move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (allowedToMove == true)
+        {
+            rb.velocity = move.normalized * speed * Time.deltaTime;
+        }
+       
     }
 
 

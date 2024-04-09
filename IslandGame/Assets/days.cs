@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class days : MonoBehaviour
 {
+    public GameObject player;
     public int timeslot = 1;
     public Image timeSlur;
     public GameObject playerUI;
@@ -12,6 +13,7 @@ public class days : MonoBehaviour
     public TextMeshProUGUI tidOgTid;
     public int dag;
     public NPCDagManager npcMan;
+    public Button sleep;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,7 @@ public class days : MonoBehaviour
     {
         progresstime();
         StartCoroutine(wait());
+        npcMan.secondDay();
     }
     public void progresstime()
     {
@@ -116,9 +119,12 @@ public class days : MonoBehaviour
     IEnumerator wait()
     {
         timeSlur.color = new Color32(0, 0, 0, 255);
-    
+        sleep.gameObject.SetActive(false);
+        player.GetComponent<movement>().allowedToMove = false;
         yield return new WaitForSeconds(5);
+        player.GetComponent<movement>().allowedToMove = true;
         playerUI.SetActive(false);
+        sleep.gameObject.SetActive(true);
         if (timeslot % 3 == 1)
         {
             timeSlur.color = new Color32(255, 255, 255, 0);

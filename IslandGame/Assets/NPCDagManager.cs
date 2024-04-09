@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NPCDagManager : MonoBehaviour
 {
-    public days _days;
+    [HideInInspector] public days _days;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +35,10 @@ public class NPCDagManager : MonoBehaviour
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 2)
                     {
-                        Debug.Log("Active: Middag3");
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag3;
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 3)
                     {
-                        Debug.Log("Active: Middag4");
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag4;
                     }
                 }
@@ -75,25 +73,27 @@ public class NPCDagManager : MonoBehaviour
                     if (child.gameObject.GetComponent<npcDialogScript>().morgen[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen;
-                        Debug.Log("morgen dialog1");
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen2;
                         child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                        Debug.Log("morgen dialog2");
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 2)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen3;
+                        Debug.Log(child.name);
                         child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                        Debug.Log("morgen dialog3");
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 3)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen4;
                         child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                        Debug.Log("morgen dialog4");
+                    }
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 4)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen5;
+                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
                     }
                 }
             }
