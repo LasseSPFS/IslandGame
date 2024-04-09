@@ -13,6 +13,7 @@ public class activityCaller : MonoBehaviour
     public npcDialogScript Træ;
     public npcDialogScript dre;
     public npcDialogScript skr;
+    public npcDialogScript præ;
     public Image timeSlur;
     public GameObject playerUI;
     public GameObject surviveValg;
@@ -21,6 +22,7 @@ public class activityCaller : MonoBehaviour
     [Header("Bools")]
     public bool donePicking = false;
     public bool chooseSnor = false;
+    public bool gotMirror = false;
     [Header("Survivorpicker")]
     public List<string> survivors; 
 
@@ -79,6 +81,49 @@ public class activityCaller : MonoBehaviour
             _inventory.gotBinding = true;
         }
     }
+    public void hangoutPræst()
+    {
+        Debug.Log("ran this2");
+        if(præ.NPCLevel == 0)
+        {
+            if (dre.NPCLevel == 1 && dre.npcLockedUntilItem)
+            {
+                dre.npcLockedUntilItem = false;
+                playerTekst.text = "Du bad sammen med Abraham og aftalte at snakke med ham om hulen næste gang";
+                præ.NPCLevel++;
+            }
+            else
+            {
+                playerTekst.text = "Du bad sammen med Abraham, du føler at guds frelse er nærmmere";
+                præ.NPCLevel = 0;
+            }
+        }
+        else if (præ.NPCLevel == 1)
+        {
+            Debug.Log("Ran this");
+            playerTekst.text = "I alle 3 udforskede hulen og bad om hjælp fra Gud i den ";
+            dre.NPCLevel++;
+            dre.npcLockedUntilItem = false;
+        }
+        else if (præ.NPCLevel == 2)
+        {
+            playerTekst.text = "Du bad sammen med Abraham, dette er guds vilje";
+            if(gotMirror)
+            {
+                præ.npcLockedUntilItem = false;
+            }
+        }
+        else if(præ.NPCLevel == 3)
+        {
+            playerTekst.text = "Vi fandt øens højeste punkt og bøjede solens stråler men gud svaret os ikke";
+            dre.npcLockedUntilItem = false;
+        }
+        else if (præ.NPCLevel == 4)
+        {
+            playerTekst.text = "Du bad sammen med Abraham, dette er guds vilje ";
+            dre.npcLockedUntilItem = false;
+        }
+    }
     public void hangoutDreng()
     {
         if (dre.NPCLevel == 0)
@@ -94,11 +139,27 @@ public class activityCaller : MonoBehaviour
                 playerTekst.text = "Dig og Tomas fandt en masse edderkopper og lavede garnnøjler ud af spindende mens i legede. Du beholdte dem til Emma";
                 skr.npcLockedUntilItem = false;
                 skr.middag2[0] = "Giv mig en dag til at ræde det ud og lave det til noget brugbart€";
-            }
+            }   
             else
             {
-                playerTekst.text = "Du legede med tom";
+                playerTekst.text = "Du legede i skoven med Tomas";
             }
+        }
+        if(dre.NPCLevel == 2)
+        {
+            playerTekst.text = "Dig og tom arbejder sammen om at forberede beskeden og sender den ud i havet håbefulde om, at nogen vil finde den.";
+        }
+        if (dre.NPCLevel == 3)
+        {
+            playerTekst.text = "Jeg blev givet et spejl af Tom og burde snakke med Abraham om det";
+            præ.npcLockedUntilItem = false;
+            gotMirror = true;
+        }
+        if (dre.NPCLevel == 4)
+        {
+            playerTekst.text = "Jeg kan ikke mere. Vi har forsøgt alt, men vi er stadig fanget her.Der kommer aldrig nogen forbi.";
+            præ.npcLockedUntilItem = false;
+            ending();
 
         }
     }
@@ -147,7 +208,15 @@ public class activityCaller : MonoBehaviour
         }
 
     }
-
+    public void ending()
+    {
+        if(dre.NPCLevel == 4 && præ.NPCLevel == 3)
+        {
+            timeSlur.color = Color.blue;
+            playerUI.SetActive(true);
+            playerTekst.text = " Vi har gjort alt, hvad vi kunne, men det var ikke nok. Vi er fanget her, men vi er ikke alene, Gud vil altid være med os.";
+        }
+    }
     public void pickedSurvior(Button button)
     {
         if(survivors.Count < 2)

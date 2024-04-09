@@ -237,6 +237,11 @@ public class npcDialogScript : MonoBehaviour
                     activatedActivity = true;
                     //StartCoroutine(wait());
                 }
+                else if (Bogstav.ToString() == "^")
+                {                   
+                    activatedActivity = true;
+                    //StartCoroutine(wait());
+                }
                 else if (Bogstav.ToString() == "#")
                 {
                     index = 0;

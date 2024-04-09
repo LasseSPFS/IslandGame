@@ -6,6 +6,7 @@ using TMPro;
 public class days : MonoBehaviour
 {
     public GameObject player;
+    public GameObject tænkebobbel;
     public int timeslot = 1;
     public Image timeSlur;
     public GameObject playerUI;
@@ -24,7 +25,6 @@ public class days : MonoBehaviour
 
     void Update()
     {
-        
         clockController();
         if (Input.GetKeyUp(KeyCode.K))
         {
@@ -116,15 +116,25 @@ public class days : MonoBehaviour
         }
     }
 
+   
     IEnumerator wait()
     {
         timeSlur.color = new Color32(0, 0, 0, 255);
         sleep.gameObject.SetActive(false);
         player.GetComponent<movement>().allowedToMove = false;
+        if(player.GetComponent<Player>().inBed  == false)
+        {
+            tænkebobbel.SetActive(true);
+        }      
+        player.transform.position = new Vector3(25.08f, -9.11f, -0.3471513f);
         yield return new WaitForSeconds(5);
+        tænkebobbel.SetActive(false);
+        if (player.GetComponent<Player>().inBed == true)
+        {
+            sleep.gameObject.SetActive(true);
+        }
         player.GetComponent<movement>().allowedToMove = true;
         playerUI.SetActive(false);
-        sleep.gameObject.SetActive(true);
         if (timeslot % 3 == 1)
         {
             timeSlur.color = new Color32(255, 255, 255, 0);

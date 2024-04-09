@@ -52,6 +52,7 @@ public class NPCDagManager : MonoBehaviour
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften;
                     }
+                    
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften2;
@@ -73,6 +74,7 @@ public class NPCDagManager : MonoBehaviour
                     if (child.gameObject.GetComponent<npcDialogScript>().morgen[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen;
+                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
                     {

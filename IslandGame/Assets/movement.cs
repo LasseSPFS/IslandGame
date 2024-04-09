@@ -33,7 +33,12 @@ public class movement : MonoBehaviour
         move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (allowedToMove == true)
         {
+           
             rb.velocity = move.normalized * speed * Time.deltaTime;
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
         }
        
     }
