@@ -1,0 +1,2207 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'da' Physical Memory: 8012 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ander/Desktop/IslandGame/IslandGame
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53566
+Successfully changed project path to: C:/Users/ander/Desktop/IslandGame/IslandGame
+C:/Users/ander/Desktop/IslandGame/IslandGame
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [20368] Host "[IP] 10.160.213.57 [Port] 0 [Flags] 2 [Guid] 980474846 [EditorId] 980474846 [Version] 1048832 [Id] WindowsEditor(7,AndersJape) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [20368] Host "[IP] 10.160.213.57 [Port] 0 [Flags] 2 [Guid] 980474846 [EditorId] 980474846 [Version] 1048832 [Id] WindowsEditor(7,AndersJape) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 111.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ander/Desktop/IslandGame/IslandGame/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.2737
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.029132 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 106.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.307 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1309ms)
+		BeginReloadAssembly (180ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (844ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (450ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (106ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (260ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.016881 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.110 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2111ms)
+		BeginReloadAssembly (222ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1676ms)
+			LoadAssemblies (286ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (486ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (116ms)
+			SetupLoadedEditorAssemblies (790ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (583ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3321 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (184.1 KB). Loaded Objects now: 3786.
+Memory consumption went from 119.2 MB to 119.0 MB.
+Total: 7.779800 ms (FindLiveObjects: 1.041600 ms CreateObjectMapping: 0.578600 ms MarkObjects: 5.966800 ms  DeleteObjects: 0.190400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2456.294813 seconds.
+  path: Assets/sprites/Map sprites/mapDrawing.jpg
+  artifactKey: Guid(0ca139437b3f1d248be8f78bb3fa1270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Map sprites/mapDrawing.jpg using Guid(0ca139437b3f1d248be8f78bb3fa1270) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06234e4dc821964e2a0fd2a44adfc026') in 0.418768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1190.619753 seconds.
+  path: Assets/sprites/alle-karaktere.png
+  artifactKey: Guid(191e193fba136474a85895d6d4652463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/alle-karaktere.png using Guid(191e193fba136474a85895d6d4652463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3b377a8e4a678e14f2606b1d382ec7') in 0.027818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/sprites/hovedperson-person-hjrefod (1).png
+  artifactKey: Guid(ea79c1531ff3db342be483d5a3803246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/hovedperson-person-hjrefod (1).png using Guid(ea79c1531ff3db342be483d5a3803246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4017635e47494ceb36b26bc5f0627d70') in 0.113587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/sprites/Beach-tileset (3).png
+  artifactKey: Guid(2acf5afcfb09c134b8ed85c1f71098f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset (3).png using Guid(2acf5afcfb09c134b8ed85c1f71098f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fec6291b674142f93550a662117dac7') in 0.154604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/sprites/Beach-tileset (7).png
+  artifactKey: Guid(beb5e135001d5604eb1a742c4e6c0b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset (7).png using Guid(beb5e135001d5604eb1a742c4e6c0b78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25433511d739720c590601c50a00c102') in 0.324674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/sprites/NPC-ISmand.png
+  artifactKey: Guid(b8305edfaf030424c9b0f8d793e7d1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/NPC-ISmand.png using Guid(b8305edfaf030424c9b0f8d793e7d1d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca91960548ce346642a85c08e767d5ba') in 0.019127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/sprites/last last palette.prefab
+  artifactKey: Guid(d253cd0ea0df0ba499dccc7818b770c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/last last palette.prefab using Guid(d253cd0ea0df0ba499dccc7818b770c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333b9307b931035d95986de2f3a04a6b') in 0.252119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/sprites/trstamme.png
+  artifactKey: Guid(74a43a63e09085749a67463f1a882ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/trstamme.png using Guid(74a43a63e09085749a67463f1a882ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9761c89895edca6aa3d3e8530f1391') in 0.022975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/sprites/kse.png
+  artifactKey: Guid(88187bfcc0b98a74498ced77f26119c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/kse.png using Guid(88187bfcc0b98a74498ced77f26119c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f1252ad88abb52872c5932bfcbd7cb') in 0.023431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.555782 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66634def6ee31bcebd3d35ad36286900') in 0.013916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.236889 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c6fa2b7677647255b4ead757ebdaa9') in 0.015731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.563074 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1c95527d9c26c8847e8e8dc95fda0b') in 0.015897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.868553 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78403fd8bb2c0203f0317a14719a32ee') in 0.015868 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.608202 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b352e9d9430f8bcf0b0be02d938c9250') in 0.261708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.900852 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9545d10e9fb8f8327f5ac8800121a378') in 0.025899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.445697 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c154988142a661c345e3467a300606ad') in 0.279636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 70.242514 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a363ae1ddc1c1f14239c548d7145d24') in 0.272908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.725927 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31f78245fb268cb7e40838026fc7f25') in 0.262090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3825.031744 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59714ccaa3954ca27103768b80e31ccf') in 0.180586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.973586 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d897d4e115debb9a4a73104a0a793c') in 0.047839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.820559 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6b11bac470401dba66231beebb8c40') in 0.031788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.431306 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e83a23304f70dff8fec9d6669f1740e') in 0.054645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.115381 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879ec542003a047dda2bbeff11d5490e') in 0.019092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.388530 seconds.
+  path: Assets/sprites/Beach-tileset 1.png
+  artifactKey: Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 1.png using Guid(27002bc66d827fb4d942191c65346ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ef353253abbffa7de88a5e621e7530') in 0.237076 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006555 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.074 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4082ms)
+		BeginReloadAssembly (1505ms)
+			ExecutionOrderSort (1ms)
+			DisableScriptedObjects (91ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (743ms)
+		EndReloadAssembly (2328ms)
+			LoadAssemblies (347ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (710ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (1175ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (918ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (28ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 3830.
+Memory consumption went from 122.1 MB to 122.0 MB.
+Total: 14.753800 ms (FindLiveObjects: 1.050900 ms CreateObjectMapping: 1.214000 ms MarkObjects: 12.098200 ms  DeleteObjects: 0.388900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005972 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.463 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2464ms)
+		BeginReloadAssembly (303ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (90ms)
+		EndReloadAssembly (1954ms)
+			LoadAssemblies (220ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (573ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (97ms)
+			SetupLoadedEditorAssemblies (1003ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (780ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 3845.
+Memory consumption went from 122.1 MB to 122.0 MB.
+Total: 7.747100 ms (FindLiveObjects: 1.050900 ms CreateObjectMapping: 1.239000 ms MarkObjects: 5.338000 ms  DeleteObjects: 0.116100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006100 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.581 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2582ms)
+		BeginReloadAssembly (246ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (80ms)
+		EndReloadAssembly (2161ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (680ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (114ms)
+			SetupLoadedEditorAssemblies (1089ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (878ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 3860.
+Memory consumption went from 122.1 MB to 122.0 MB.
+Total: 8.833300 ms (FindLiveObjects: 0.539900 ms CreateObjectMapping: 0.914300 ms MarkObjects: 6.902400 ms  DeleteObjects: 0.474400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006390 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.312 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2313ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1913ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (544ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (91ms)
+			SetupLoadedEditorAssemblies (1017ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (803ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (24ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.9 KB). Loaded Objects now: 3875.
+Memory consumption went from 122.2 MB to 122.0 MB.
+Total: 9.946400 ms (FindLiveObjects: 0.482600 ms CreateObjectMapping: 0.353500 ms MarkObjects: 8.618600 ms  DeleteObjects: 0.488000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008403 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.556 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2557ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (2167ms)
+			LoadAssemblies (171ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (652ms)
+			ReleaseScriptCaches (9ms)
+			RebuildScriptCaches (209ms)
+			SetupLoadedEditorAssemblies (1005ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (151ms)
+				ProcessInitializeOnLoadAttributes (771ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 3890.
+Memory consumption went from 122.2 MB to 122.1 MB.
+Total: 10.316000 ms (FindLiveObjects: 1.015700 ms CreateObjectMapping: 1.369100 ms MarkObjects: 7.802900 ms  DeleteObjects: 0.126500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009122 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.359 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2360ms)
+		BeginReloadAssembly (240ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1977ms)
+			LoadAssemblies (176ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (558ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (118ms)
+			SetupLoadedEditorAssemblies (1041ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (824ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (20ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 3905.
+Memory consumption went from 122.2 MB to 122.1 MB.
+Total: 12.368100 ms (FindLiveObjects: 0.353600 ms CreateObjectMapping: 1.312700 ms MarkObjects: 10.544200 ms  DeleteObjects: 0.156100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007263 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.273 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2274ms)
+		BeginReloadAssembly (224ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (1916ms)
+			LoadAssemblies (160ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (570ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (994ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (784ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 3920.
+Memory consumption went from 122.3 MB to 122.1 MB.
+Total: 8.041200 ms (FindLiveObjects: 0.945500 ms CreateObjectMapping: 0.572000 ms MarkObjects: 6.159700 ms  DeleteObjects: 0.360400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2443.194828 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f39a6bf7be0e3cf2915ea45c0417acf') in 0.039617 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008148 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.384 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2386ms)
+		BeginReloadAssembly (266ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (1943ms)
+			LoadAssemblies (234ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (494ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (96ms)
+			SetupLoadedEditorAssemblies (1060ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (139ms)
+				ProcessInitializeOnLoadAttributes (831ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 19 unused Assets / (150.7 KB). Loaded Objects now: 3935.
+Memory consumption went from 122.3 MB to 122.1 MB.
+Total: 6.505700 ms (FindLiveObjects: 0.849500 ms CreateObjectMapping: 0.453400 ms MarkObjects: 5.022100 ms  DeleteObjects: 0.179000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007690 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.275 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2277ms)
+		BeginReloadAssembly (290ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (81ms)
+		EndReloadAssembly (1854ms)
+			LoadAssemblies (201ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (523ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (987ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (138ms)
+				ProcessInitializeOnLoadAttributes (768ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (23ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 3950.
+Memory consumption went from 122.3 MB to 122.1 MB.
+Total: 9.307900 ms (FindLiveObjects: 1.342000 ms CreateObjectMapping: 0.937700 ms MarkObjects: 6.676200 ms  DeleteObjects: 0.349600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009223 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.485 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2486ms)
+		BeginReloadAssembly (270ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2042ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (604ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (112ms)
+			SetupLoadedEditorAssemblies (1052ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (128ms)
+				ProcessInitializeOnLoadAttributes (821ms)
+				ProcessInitializeOnLoadMethodAttributes (55ms)
+				AfterProcessingInitializeOnLoad (29ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 3965.
+Memory consumption went from 122.3 MB to 122.2 MB.
+Total: 9.920400 ms (FindLiveObjects: 0.940300 ms CreateObjectMapping: 0.855000 ms MarkObjects: 7.711900 ms  DeleteObjects: 0.409600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005987 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.588 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2591ms)
+		BeginReloadAssembly (238ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (2174ms)
+			LoadAssemblies (190ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (541ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (117ms)
+			SetupLoadedEditorAssemblies (1228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (996ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (19ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 3980.
+Memory consumption went from 122.3 MB to 122.2 MB.
+Total: 5.342400 ms (FindLiveObjects: 0.923300 ms CreateObjectMapping: 0.354200 ms MarkObjects: 3.868500 ms  DeleteObjects: 0.192700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 785.959635 seconds.
+  path: Assets/sprites
+  artifactKey: Guid(0f50c3be64856694ab3ed8f2681faeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites using Guid(0f50c3be64856694ab3ed8f2681faeef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de9e5478739912fa110c926cabdb733b') in 0.018720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2477.656948 seconds.
+  path: Assets/sprites/Beach-tileset 2.png
+  artifactKey: Guid(af8140f6b36e0cc4f8cc80de0596571b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 2.png using Guid(af8140f6b36e0cc4f8cc80de0596571b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd542671f217f24e0763169fd382bb3de') in 0.401871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.234017 seconds.
+  path: Assets/sprites/Beach-tileset 3.png
+  artifactKey: Guid(5aa8f0c9bd9695743aeee82afe6b947f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset 3.png using Guid(5aa8f0c9bd9695743aeee82afe6b947f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd498831fbf3fd3f648cb6a70e5b56e9d') in 0.029248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.157240 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbe8051b748ae294d56b8a2bae1f61f') in 0.020203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 493.486155 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170004d04db9ea4e7d1a1a5068c2f146') in 0.092420 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008331 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.712 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2714ms)
+		BeginReloadAssembly (826ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (50ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (448ms)
+		EndReloadAssembly (1708ms)
+			LoadAssemblies (247ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (549ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (848ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (654ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 3997.
+Memory consumption went from 122.4 MB to 122.2 MB.
+Total: 9.949000 ms (FindLiveObjects: 0.732900 ms CreateObjectMapping: 0.557900 ms MarkObjects: 8.446500 ms  DeleteObjects: 0.210500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008394 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.725 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1726ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1468ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (419ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (776ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (603ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 4012.
+Memory consumption went from 122.4 MB to 122.2 MB.
+Total: 6.225300 ms (FindLiveObjects: 1.075500 ms CreateObjectMapping: 0.444900 ms MarkObjects: 4.583600 ms  DeleteObjects: 0.118600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 411.358794 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7ba9dc552363cba46bae1eadb01745') in 0.049516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 186.074430 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2bbd18dd512b73069a423f12e0c27b') in 0.034338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.783733 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f08d2ef10d83901a0000f538a4cc417') in 0.012924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.324641 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '443f82bd64e1db9f83ec87cce7e72c15') in 0.014757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 367.056228 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548bf212ba4069936743c250aface5da') in 0.021324 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.070766 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f233508a5b037f2030deefb79b68ac9') in 0.017318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.227776 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a238ac49a2d44c2bbda4e082a6359e38') in 0.015918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.887656 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5904adb79d6a1e9f667458b5b404948') in 0.021542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.916863 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc038a1f5a2932f9eca4dde2bdbdff46') in 0.020950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.644826 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b5aadb4f7fd7d00f1b96e08f611ca3') in 0.021102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.460960 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf4259c0708966d308bf4f13c947bcf') in 0.026260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.214057 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be40828d3b1775ff779734cc4ebce97f') in 0.020660 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.688314 seconds.
+  path: Assets/sprites/Brændtstamme.png
+  artifactKey: Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme.png using Guid(83056fb9b3a73cc48bbc674f85db1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec23eed1b93bc07cfcce60c6f9f18645') in 0.024536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.185736 seconds.
+  path: Assets/sprites/Brændtstamme-bund.png
+  artifactKey: Guid(7d5b4e3f4511bf14394351998ad27f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme-bund.png using Guid(7d5b4e3f4511bf14394351998ad27f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d8c3fe3ea33b028d8e6b6b95c096f5') in 0.023604 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.211829 seconds.
+  path: Assets/sprites/Brændtstamme-top.png
+  artifactKey: Guid(3241af9b74614cd4f8769921319d118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme-top.png using Guid(3241af9b74614cd4f8769921319d118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a85793ee9e76d8e56c4de8e81130bee') in 0.011688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.126054 seconds.
+  path: Assets/sprites/Brændtstamme-top.png
+  artifactKey: Guid(3241af9b74614cd4f8769921319d118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme-top.png using Guid(3241af9b74614cd4f8769921319d118f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa5f00cb241a200cf655b6a6637e3dc') in 0.012573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.009566 seconds.
+  path: Assets/sprites/Brændtstamme-bund.png
+  artifactKey: Guid(7d5b4e3f4511bf14394351998ad27f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Brændtstamme-bund.png using Guid(7d5b4e3f4511bf14394351998ad27f4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c0b6b90ee2bc183af86f634a3c7e6b2') in 0.009802 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008659 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.895 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1896ms)
+		BeginReloadAssembly (250ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1489ms)
+			LoadAssemblies (188ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (411ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (76ms)
+			SetupLoadedEditorAssemblies (778ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (611ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4035.
+Memory consumption went from 122.4 MB to 122.3 MB.
+Total: 5.908000 ms (FindLiveObjects: 0.294900 ms CreateObjectMapping: 0.269100 ms MarkObjects: 5.236700 ms  DeleteObjects: 0.105900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005854 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.694 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1696ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1430ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (388ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (791ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (610ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.6 KB). Loaded Objects now: 4050.
+Memory consumption went from 122.4 MB to 122.3 MB.
+Total: 5.907900 ms (FindLiveObjects: 0.523800 ms CreateObjectMapping: 0.770100 ms MarkObjects: 4.441000 ms  DeleteObjects: 0.171600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008585 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.717 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1718ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1417ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (391ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (785ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (622ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4065.
+Memory consumption went from 122.4 MB to 122.3 MB.
+Total: 5.948800 ms (FindLiveObjects: 0.599200 ms CreateObjectMapping: 0.376200 ms MarkObjects: 4.741600 ms  DeleteObjects: 0.229400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008927 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.710 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1710ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1447ms)
+			LoadAssemblies (113ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (434ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (80ms)
+			SetupLoadedEditorAssemblies (746ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (570ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 4080.
+Memory consumption went from 122.5 MB to 122.3 MB.
+Total: 5.453800 ms (FindLiveObjects: 0.751000 ms CreateObjectMapping: 0.523900 ms MarkObjects: 3.992900 ms  DeleteObjects: 0.183100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010110 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.774 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1775ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1463ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (419ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (772ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (590ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (18ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3303 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4095.
+Memory consumption went from 122.5 MB to 122.3 MB.
+Total: 5.898400 ms (FindLiveObjects: 0.589900 ms CreateObjectMapping: 0.243000 ms MarkObjects: 4.851400 ms  DeleteObjects: 0.211400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 479.566906 seconds.
+  path: Assets/sprites/fodbold.png
+  artifactKey: Guid(ac64d9c27faa8544c9bad09994388f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/fodbold.png using Guid(ac64d9c27faa8544c9bad09994388f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcedc1dc00b25e9ff7ed8d7dd485a13') in 0.065867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.520913 seconds.
+  path: Assets/sprites/fodbold.png
+  artifactKey: Guid(ac64d9c27faa8544c9bad09994388f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/fodbold.png using Guid(ac64d9c27faa8544c9bad09994388f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4815ef3f27e16aa81b5994e1787760b') in 0.039322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 432.849672 seconds.
+  path: Assets/sprites/sand-græss-ani.png
+  artifactKey: Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani.png using Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c216ab3e2dd6e650d4a219572be1deba') in 0.017932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.854000 seconds.
+  path: Assets/sprites/sand-græss-ani.png
+  artifactKey: Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani.png using Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c70550cdc8bd072d20d21914379dc65') in 0.011841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.511023 seconds.
+  path: Assets/sprites/sand-græss-ani.png
+  artifactKey: Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani.png using Guid(0a4c09449101fcf458872ff8f85d3ef0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd13e7833fb172c61806eedff01f36e') in 0.021946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.313564 seconds.
+  path: Assets/sprites/sand-græss-ani
+  artifactKey: Guid(1c6725d32b3981d41bc3b007558becef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani using Guid(1c6725d32b3981d41bc3b007558becef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1aee67afdf5312b3efc241b93981596') in 0.003200 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014151 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.759 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1761ms)
+		BeginReloadAssembly (518ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (34ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (264ms)
+		EndReloadAssembly (1118ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (546ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (415ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4135.
+Memory consumption went from 123.3 MB to 123.2 MB.
+Total: 5.906600 ms (FindLiveObjects: 0.533500 ms CreateObjectMapping: 0.347900 ms MarkObjects: 4.813300 ms  DeleteObjects: 0.209600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 209.721451 seconds.
+  path: Assets/sprites/sand-græss-ani/New Animated Tile.asset
+  artifactKey: Guid(8229babf7815f53489dcf55ee31e40b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani/New Animated Tile.asset using Guid(8229babf7815f53489dcf55ee31e40b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43981f29ad1126411788dd0e02bc3635') in 0.092740 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007783 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.010 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2011ms)
+		BeginReloadAssembly (284ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1562ms)
+			LoadAssemblies (212ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (437ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (829ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (651ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 4150.
+Memory consumption went from 123.4 MB to 123.2 MB.
+Total: 7.994700 ms (FindLiveObjects: 0.717200 ms CreateObjectMapping: 0.711300 ms MarkObjects: 6.414400 ms  DeleteObjects: 0.150000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 344.142098 seconds.
+  path: Assets/sprites/Materials/Telt.png
+  artifactKey: Guid(848d04ddca513d04999cc054b1472d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Materials/Telt.png using Guid(848d04ddca513d04999cc054b1472d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d59213427d925a51e731cd725a11d38') in 0.075872 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008908 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.16 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.722 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1723ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1436ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (337ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (819ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (632ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.8 KB). Loaded Objects now: 4167.
+Memory consumption went from 123.4 MB to 123.2 MB.
+Total: 5.419300 ms (FindLiveObjects: 0.503500 ms CreateObjectMapping: 0.771000 ms MarkObjects: 3.985700 ms  DeleteObjects: 0.157900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007823 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.639 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1641ms)
+		BeginReloadAssembly (177ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (1349ms)
+			LoadAssemblies (118ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (813ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (630ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.9 KB). Loaded Objects now: 4182.
+Memory consumption went from 123.4 MB to 123.3 MB.
+Total: 6.517000 ms (FindLiveObjects: 0.970300 ms CreateObjectMapping: 0.290100 ms MarkObjects: 3.458800 ms  DeleteObjects: 1.796100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 171.089608 seconds.
+  path: Assets/Scenes/anders.unity
+  artifactKey: Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anders.unity using Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629ddd0cd8f2a4e45d8dcc08c0391744') in 0.010224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.913202 seconds.
+  path: Assets/sprites/sand-græss-ani/New Animated Tile.asset
+  artifactKey: Guid(8229babf7815f53489dcf55ee31e40b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/sand-græss-ani/New Animated Tile.asset using Guid(8229babf7815f53489dcf55ee31e40b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a03e5c02079adabb3a64d060bdaf821') in 0.013867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.274565 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b91e79450a65aceab09c04a4397892') in 0.002948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.015812 seconds.
+  path: Assets/Scenes/anders.unity
+  artifactKey: Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anders.unity using Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0ca214db6372a6d15e6b594bb2b2c2') in 0.002463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.955477 seconds.
+  path: Assets/Scenes/anders.unity
+  artifactKey: Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anders.unity using Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a60de7b90c0bb813f748e3996b814d9') in 0.003780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.965926 seconds.
+  path: Assets/Scenes/anders.unity
+  artifactKey: Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anders.unity using Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c1a5328486eb47d7e199e05a926fea3') in 0.002876 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007919 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.760 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1761ms)
+		BeginReloadAssembly (155ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (1494ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (809ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (619ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.40 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.5 KB). Loaded Objects now: 4197.
+Memory consumption went from 123.4 MB to 123.3 MB.
+Total: 5.974900 ms (FindLiveObjects: 0.472200 ms CreateObjectMapping: 0.668400 ms MarkObjects: 4.568400 ms  DeleteObjects: 0.264400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 35.903456 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ce9d7be214ff2b52eec45e15780cac5') in 0.008593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.831806 seconds.
+  path: Assets/Scenes/anders.unity
+  artifactKey: Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/anders.unity using Guid(003150897c54ef04f9099d5483eb9ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed836585e725b97633dad58635dbfd17') in 0.002333 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008258 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.892 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1893ms)
+		BeginReloadAssembly (165ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1630ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (826ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (627ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4212.
+Memory consumption went from 123.4 MB to 123.3 MB.
+Total: 5.365000 ms (FindLiveObjects: 0.603900 ms CreateObjectMapping: 0.456000 ms MarkObjects: 3.933900 ms  DeleteObjects: 0.370100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008866 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.789 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1790ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1498ms)
+			LoadAssemblies (132ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (451ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (767ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (102ms)
+				ProcessInitializeOnLoadAttributes (607ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.9 KB). Loaded Objects now: 4227.
+Memory consumption went from 123.5 MB to 123.3 MB.
+Total: 7.136600 ms (FindLiveObjects: 0.572300 ms CreateObjectMapping: 0.357900 ms MarkObjects: 5.956100 ms  DeleteObjects: 0.247600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009901 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\ander\Desktop\IslandGame\IslandGame\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.808 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1809ms)
+		BeginReloadAssembly (173ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1516ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (427ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (795ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (618ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3323 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 18 unused Assets / (150.7 KB). Loaded Objects now: 4242.
+Memory consumption went from 123.5 MB to 123.3 MB.
+Total: 5.752900 ms (FindLiveObjects: 0.715400 ms CreateObjectMapping: 0.351200 ms MarkObjects: 4.445000 ms  DeleteObjects: 0.239300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 5166.665347 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaf444739b1c3b512cf56628c1f90e43') in 0.767582 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.785397 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '369efd22c82649980f03ac077a8a3a09') in 0.076512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 69.809961 seconds.
+  path: Assets/sprites/Beach-tileset.png
+  artifactKey: Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset.png using Guid(c93b7dab359a17d42ae2af4cb45bab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ede036e0bc5002f1de75e40de8ee744f') in 0.440339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 48.890363 seconds.
+  path: Assets/sprites/Beach-tileset_0.asset
+  artifactKey: Guid(02d0e175f83519a41bb1ab1bacd9ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_0.asset using Guid(02d0e175f83519a41bb1ab1bacd9ad2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97507ea2cb8edf43222ea9ea9ab70b46') in 0.061274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/sprites/Beach-tileset_2.asset
+  artifactKey: Guid(b47d557be5ebc1e4e95975f40ec9d603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_2.asset using Guid(b47d557be5ebc1e4e95975f40ec9d603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e97a90dafccc72174165358856d0828') in 0.016694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/sprites/Beach-tileset_18.asset
+  artifactKey: Guid(11ef350ebd5b9c34abefe16ba3bdaaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_18.asset using Guid(11ef350ebd5b9c34abefe16ba3bdaaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c40576336635e9abf2f9a739af5c3ea') in 0.042537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/sprites/Beach-tileset_28.asset
+  artifactKey: Guid(dcacfdb6935517f4f9615a0a84895014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_28.asset using Guid(dcacfdb6935517f4f9615a0a84895014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c6c3aaa9ab1c4ef1a8420412f634fd') in 0.029970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/sprites/Beach-tileset_31.asset
+  artifactKey: Guid(db984e83385d5fa488da741dbe29896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_31.asset using Guid(db984e83385d5fa488da741dbe29896e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55706d1c99dee8ddf87071c07cb70285') in 0.019912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/sprites/Beach-tileset_32.asset
+  artifactKey: Guid(850594b468fca5146bb31183605e0fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_32.asset using Guid(850594b468fca5146bb31183605e0fb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67451e9d6cb51674834be1dc4c57f7d9') in 0.033991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/sprites/Beach-tileset_12.asset
+  artifactKey: Guid(36e160003f7bef54ba17bbbf2d67651f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_12.asset using Guid(36e160003f7bef54ba17bbbf2d67651f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2c4a981d9778661cbe372d7e3995b02') in 0.015732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/sprites/Beach-tileset_21.asset
+  artifactKey: Guid(a313403f0a547df45ba9b1aa3131caa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_21.asset using Guid(a313403f0a547df45ba9b1aa3131caa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398b2641eacc6ad3d612e2c01e36896b') in 0.010763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/sprites/Beach-tileset_23.asset
+  artifactKey: Guid(f078fc05dd0021b4ebc7fe0c20035783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_23.asset using Guid(f078fc05dd0021b4ebc7fe0c20035783) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1af715acd9e987703905e7e2c3ad9e5') in 0.020623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/sprites/Beach-tileset_29.asset
+  artifactKey: Guid(b85b7e25e89a87b45bdf7fe8a0378b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_29.asset using Guid(b85b7e25e89a87b45bdf7fe8a0378b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7c67c90e6bdfdcef5559c87d3564dc') in 0.016057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/sprites/Beach-tileset_25.asset
+  artifactKey: Guid(269c6a73e7267d749a44d80198b68678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_25.asset using Guid(269c6a73e7267d749a44d80198b68678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2e7f4efab5a68f1809048fd994c33e') in 0.152891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/sprites/Beach-tileset_4.asset
+  artifactKey: Guid(ec604cdb3597f744aa89d0835bbd2a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_4.asset using Guid(ec604cdb3597f744aa89d0835bbd2a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e8696485005585a03c4d2cbc96b62b9') in 0.020720 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/sprites/Beach-tileset_14.asset
+  artifactKey: Guid(5c8940dfeaf67aa439b87af84b5c5a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_14.asset using Guid(5c8940dfeaf67aa439b87af84b5c5a2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8371ee7fab0ce60b4dd4aaa79ca22ead') in 0.014500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/sprites/Beach-tileset_10.asset
+  artifactKey: Guid(161660c227b330546bfd097154577e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_10.asset using Guid(161660c227b330546bfd097154577e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47e9f110df6d1465ed110fe2e178ca8') in 0.015077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/sprites/Beach-tileset_20.asset
+  artifactKey: Guid(db4e87afc6484654b973acacc7f6494e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_20.asset using Guid(db4e87afc6484654b973acacc7f6494e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a2b3395f4ab6d312c90ac7ded382f4') in 0.018322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/sprites/Beach-tileset_6.asset
+  artifactKey: Guid(e19816b8837f5ba4ba4a2aeeb64056ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_6.asset using Guid(e19816b8837f5ba4ba4a2aeeb64056ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb4105bc721909ff21f018d987c11e2') in 0.013983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/sprites/Beach-tileset_16.asset
+  artifactKey: Guid(910562270e5763845a1048d18ca91c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_16.asset using Guid(910562270e5763845a1048d18ca91c83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8feb2b0fcdd3382f010e95c8e5ff518') in 0.018081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/sprites/Beach-tileset_19.asset
+  artifactKey: Guid(17c7abba4b5108d49b174c128b7e4dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_19.asset using Guid(17c7abba4b5108d49b174c128b7e4dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b20755323880b43d213a10aecd903404') in 0.015820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/sprites/Beach-tileset_11.asset
+  artifactKey: Guid(5c04c334d401fea4baabe2392d1b65fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_11.asset using Guid(5c04c334d401fea4baabe2392d1b65fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '128245f7b00d16c3eb3be6974de1ddbc') in 0.017141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/sprites/Beach-tileset_9.asset
+  artifactKey: Guid(cabfd1b2ff5961045bb43be983eb6184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_9.asset using Guid(cabfd1b2ff5961045bb43be983eb6184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6500dcfee670dc26c3db8c58bc8e1a9c') in 0.016509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/sprites/Beach-tileset_24.asset
+  artifactKey: Guid(619684648e2065e4fbbf14a6839e8c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_24.asset using Guid(619684648e2065e4fbbf14a6839e8c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff15812fb9b75ed11dc33f08b593ae7d') in 0.025762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/sprites/Beach-tileset_22.asset
+  artifactKey: Guid(fa7fe4737ee90fb4398b3163c07d80c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_22.asset using Guid(fa7fe4737ee90fb4398b3163c07d80c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc82fde5cd5ec1491b33dd004e1d872') in 0.016123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/sprites/Beach-tileset_5.asset
+  artifactKey: Guid(3e8959958c63a76408f6a435acd70e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_5.asset using Guid(3e8959958c63a76408f6a435acd70e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a3e5a8762f5a648ea683c089fd8648a') in 0.021750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/sprites/Beach-tileset_30.asset
+  artifactKey: Guid(438e487e8b7a82747b5d98b141f0a188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_30.asset using Guid(438e487e8b7a82747b5d98b141f0a188) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e7ae43ad376c4182eda2b968c828627') in 0.012861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/sprites/Beach-tileset_27.asset
+  artifactKey: Guid(fd09fdb07bd79bd4b82a133299842e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_27.asset using Guid(fd09fdb07bd79bd4b82a133299842e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76e0f10bde3193d51b5a35612d29c481') in 0.014807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/sprites/Beach-tileset_8.asset
+  artifactKey: Guid(8a50b4fab3c8db64b937bb91e08f3d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_8.asset using Guid(8a50b4fab3c8db64b937bb91e08f3d1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf1c65de1b24ce73423a8253b70d774') in 0.023502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/sprites/Beach-tileset_7.asset
+  artifactKey: Guid(6ff1c86e1be563f4fa9b27cde7effb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_7.asset using Guid(6ff1c86e1be563f4fa9b27cde7effb72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc882b0ec49e5bfa956a0f2643cab7fd') in 0.010231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/sprites/Beach-tileset_3.asset
+  artifactKey: Guid(fed3f2f0671eb964ba7b95dea6f751d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_3.asset using Guid(fed3f2f0671eb964ba7b95dea6f751d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdcad8bf4dc3d6df7bea28451e01c3c6') in 0.017639 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/sprites/Beach-tileset_13.asset
+  artifactKey: Guid(203896c2649f3ce4eb6f719cb1e80651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_13.asset using Guid(203896c2649f3ce4eb6f719cb1e80651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637c14fd347acb0454de85d662711031') in 0.012837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/sprites/Beach-tileset_26.asset
+  artifactKey: Guid(b9bd0c018f2d23049936e9b27a78d38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_26.asset using Guid(b9bd0c018f2d23049936e9b27a78d38a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244dcb682b2b00ae8ed8910d2dda923c') in 0.020118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/sprites/Beach-tileset_17.asset
+  artifactKey: Guid(b750e75e19f61e8499c0d62a4142f4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_17.asset using Guid(b750e75e19f61e8499c0d62a4142f4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1597602c87fed97b5b1e06bc8e7ac7d') in 0.013481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000329 seconds.
+  path: Assets/sprites/Beach-tileset_15.asset
+  artifactKey: Guid(d94ae64197e037e488717b2bfee30b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/sprites/Beach-tileset_15.asset using Guid(d94ae64197e037e488717b2bfee30b19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f6edbbc1e8e9626f88a8e1bb163672f') in 0.012303 seconds 
