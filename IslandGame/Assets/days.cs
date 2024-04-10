@@ -38,12 +38,18 @@ public class days : MonoBehaviour
         progresstime();
         StartCoroutine(wait());
         npcMan.secondDay();
+        if(itsMorning() && dag == 10)
+        {
+            
+        }
     }
     public void progresstime()
     {
         timeslot += 1;
         if (timeslot % 3 == 1)
         {
+            dag++;
+
             timeSlur.color = new Color32(255, 255, 255, 0);
         }
         else if (timeslot % 3 == 2)
@@ -97,7 +103,6 @@ public class days : MonoBehaviour
 
     public void clockController()
     {
-        dag = timeslot / 3;
         if(itsMorning())
         {
             tidOgTid.text = "Dag: " + dag + "\n" + "Tid på dagen:"+"\n" + "Morgen";

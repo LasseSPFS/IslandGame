@@ -10,12 +10,6 @@ public class NPCDagManager : MonoBehaviour
     {
         _days = GameObject.Find("DayManager").GetComponent<days>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
     public void secondDay()
     {
         
@@ -45,10 +39,11 @@ public class NPCDagManager : MonoBehaviour
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlTre;
                     }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 4)
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel >= 4)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlFire;
                     }
+
                 }
             }
 

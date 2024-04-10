@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour
 
     [Header("Decissions")]
     public bool didIfellALotOfTrees;
+    public bool chooseSnor;
     public void Update()
     {
         if(gotAxe && gotBinding && træ.npcLockedUntilItem)
