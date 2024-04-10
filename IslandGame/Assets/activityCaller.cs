@@ -54,6 +54,7 @@ public class activityCaller : MonoBehaviour
         if (Træ.NPCLevel == 1)
         {
             playerTekst.text = "Mig og chris fældede få palmer og lavede planker";
+
         }
     }
 
@@ -63,6 +64,7 @@ public class activityCaller : MonoBehaviour
         {
             chooseSnor = true;
             playerTekst.text = "Du brugte noget tid på at snakke med Emma om jeres plan";
+
         }
     }
     public void hangoutSkræderStof()
@@ -83,7 +85,6 @@ public class activityCaller : MonoBehaviour
     }
     public void hangoutPræst()
     {
-        Debug.Log("ran this2");
         if(præ.NPCLevel == 0)
         {
             if (dre.NPCLevel == 1 && dre.npcLockedUntilItem)
@@ -100,7 +101,6 @@ public class activityCaller : MonoBehaviour
         }
         else if (præ.NPCLevel == 1)
         {
-            Debug.Log("Ran this");
             playerTekst.text = "I alle 3 udforskede hulen og bad om hjælp fra Gud i den ";
             dre.NPCLevel++;
             dre.npcLockedUntilItem = false;
@@ -111,15 +111,20 @@ public class activityCaller : MonoBehaviour
             if(gotMirror)
             {
                 præ.npcLockedUntilItem = false;
+                præ.NPCLevel++;
             }
         }
         else if(præ.NPCLevel == 3)
         {
-            playerTekst.text = "Vi fandt øens højeste punkt og bøjede solens stråler men gud svaret os ikke";
-            dre.npcLockedUntilItem = false;
+                playerTekst.text = "Du bad sammen med Abraham, dette er guds vilje";  
+            if(gotMirror)
+            {
+                præ.NPCLevel++;
+            }
         }
-        else if (præ.NPCLevel == 4)
+        else if (præ.NPCLevel >= 4)
         {
+            playerTekst.text = "Vi fandt øens højeste punkt og bøjede solens stråler men gud svaret os ikke";            
             playerTekst.text = "Du bad sammen med Abraham, dette er guds vilje ";
             dre.npcLockedUntilItem = false;
         }
@@ -132,13 +137,13 @@ public class activityCaller : MonoBehaviour
             {
                 playerTekst.text = "Dig og Tomas fandt pinde i form af strikke pinde mens i legede. Du beholdte dem til Emma";
                 skr.npcLockedUntilItem = false;
-                skr.middag2[0] = "Giv mig en dag til at flette noget snor sammen.€";
+                skr.lvlOne[0] = "Giv mig en dag til at flette noget snor sammen.€";
             }
             else if (skr.NPCLevel == 1 && chooseSnor == false)
             {
                 playerTekst.text = "Dig og Tomas fandt en masse edderkopper og lavede garnnøjler ud af spindende mens i legede. Du beholdte dem til Emma";
                 skr.npcLockedUntilItem = false;
-                skr.middag2[0] = "Giv mig en dag til at ræde det ud og lave det til noget brugbart€";
+                skr.lvlOne[0] = "Giv mig en dag til at ræde det ud og lave det til noget brugbart€";
             }   
             else
             {
@@ -154,6 +159,10 @@ public class activityCaller : MonoBehaviour
             playerTekst.text = "Jeg blev givet et spejl af Tom og burde snakke med Abraham om det";
             præ.npcLockedUntilItem = false;
             gotMirror = true;
+            if(præ.NPCLevel == 3)
+            {
+                præ.NPCLevel++;
+            }
         }
         if (dre.NPCLevel == 4)
         {
@@ -210,12 +219,15 @@ public class activityCaller : MonoBehaviour
     }
     public void ending()
     {
-        if(dre.NPCLevel == 4 && præ.NPCLevel == 3)
+        if(gotMirror)
         {
+            Debug.Log("gg");
             timeSlur.color = Color.blue;
             playerUI.SetActive(true);
             playerTekst.text = " Vi har gjort alt, hvad vi kunne, men det var ikke nok. Vi er fanget her, men vi er ikke alene, Gud vil altid være med os.";
         }
+        Debug.Log("ggg");
+
     }
     public void pickedSurvior(Button button)
     {

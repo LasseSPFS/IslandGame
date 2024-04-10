@@ -21,25 +21,33 @@ public class NPCDagManager : MonoBehaviour
         
         if(_days.timeslot > 2)
         {
-            if(_days.itsDay() == true)
+            if(_days.itsDay() == true || _days.itsMorning())
             {
                 foreach (Transform child in transform)
                 {
-                    if(child.gameObject.GetComponent<npcDialogScript>().middag[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0 )
+                    if(_days.itsMorning())
                     {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag;
+                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
+                    }
+                    if(child.gameObject.GetComponent<npcDialogScript>().lvlZero[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0 )
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlZero;
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
                     {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag2;
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlOne;
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 2)
                     {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag3;
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlTwo;
                     }
                     else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 3)
                     {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().middag4;
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlTre;
+                    }
+                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 4)
+                    {
+                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().lvlFire;
                     }
                 }
             }
@@ -48,56 +56,11 @@ public class NPCDagManager : MonoBehaviour
             {
                 foreach (Transform child in transform)
                 {
-                    if (child.gameObject.GetComponent<npcDialogScript>().aften != null &&  child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
+                    if (child.gameObject.GetComponent<npcDialogScript>().aften != null)
                     {
                         child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften;
                     }
-                    
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften2;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 2)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften3;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 3)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().aften4;
-                    }
-                }
-            }
-            if (_days.itsMorning() == true)
-            {
-                foreach (Transform child in transform)
-                {
-                    if (child.gameObject.GetComponent<npcDialogScript>().morgen[0] != null && child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 0)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen;
-                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 1)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen2;
-                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 2)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen3;
-                        Debug.Log(child.name);
-                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 3)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen4;
-                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                    }
-                    else if (child.gameObject.GetComponent<npcDialogScript>().NPCLevel == 4)
-                    {
-                        child.gameObject.GetComponent<npcDialogScript>().activeDialog = child.gameObject.GetComponent<npcDialogScript>().morgen5;
-                        child.gameObject.GetComponent<npcDialogScript>().actDoneForTheDay = false;
-                    }
-                }
+                }                
             }
         }
 

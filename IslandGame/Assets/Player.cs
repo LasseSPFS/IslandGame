@@ -15,11 +15,6 @@ public class Player : MonoBehaviour
         _days = GameObject.Find("DayManager").GetComponent<days>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log(inBed);
-    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "bed")
