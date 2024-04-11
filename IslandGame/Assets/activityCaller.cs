@@ -230,6 +230,7 @@ public class activityCaller : MonoBehaviour
     }
     public void ending()
     {
+
         end.SetActive(true);
         if (survivors.Count == 2 && survivors[0] == "Cid" || survivors[1] == "Cid")
         {
@@ -240,7 +241,7 @@ public class activityCaller : MonoBehaviour
             eTex.text = "Vi prøvede at forlade øen, men da ingen af os kunne flyve styrtede flyet efter 5 min";
         }
         //Dreng og præst ending
-        if (gotMirror)
+        if (gotMirror && præ.NPCLevel >= 4)
         {
             eTex.text = "Vi har gjort alt, hvad vi kunne, men det var ikke nok. Vi er fanget her, men vi er ikke alene, Gud vil altid være med os";
         }
@@ -255,6 +256,7 @@ public class activityCaller : MonoBehaviour
         {
             eTex.text = "I sejlede i 1 dag inden skibbet gik i 2 da stoffet ikke kunne holde flåden sammen. Dig og Emma kom med den ene, Chris den anden. Emma og dig stødte på et fragt skib en dag senere og kom hjem, men hørte aldrig fra Chris igen"; 
         }
+        eTex.text = "Du blev slået ihjel af Cid i nattens mørke, han var utilfreds med, hvor langsom du var";
         Debug.Log("ggg");
 
     }

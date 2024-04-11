@@ -15,6 +15,7 @@ public class days : MonoBehaviour
     public int dag;
     public NPCDagManager npcMan;
     public Button sleep;
+    public activityCaller actCal;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class days : MonoBehaviour
         npcMan.secondDay();
         if(itsMorning() && dag == 10)
         {
-            
+            actCal.ending();
         }
     }
     public void progresstime()
@@ -132,7 +133,7 @@ public class days : MonoBehaviour
             tænkebobbel.SetActive(true);
         }      
         player.transform.position = new Vector3(25.08f, -9.11f, -0.3471513f);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4);
         tænkebobbel.SetActive(false);
         if (player.GetComponent<Player>().inBed == true)
         {
