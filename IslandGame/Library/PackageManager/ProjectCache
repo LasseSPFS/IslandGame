@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638458387580984903
-    m_Hash: 2305778826
+      ticks: 638484161847164369
+    m_Hash: 434770166
   m_LockFileStatus:
     m_FilePath: C:/Users/lasse/OneDrive/Dokumenter/GitHub/IslandGame/IslandGame/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638458387581145943
-    m_Hash: 2795160780
+      ticks: 638484161847164369
+    m_Hash: 534306478
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

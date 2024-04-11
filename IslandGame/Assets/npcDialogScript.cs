@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class npcDialogScript : MonoBehaviour
 {
+    [Header("Refferences")]
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
     public GameObject PlayerdialogPanel;
@@ -12,7 +13,9 @@ public class npcDialogScript : MonoBehaviour
     public GameObject fortsæt;
     public GameObject decline;
     public GameObject accept;
+    days _days;
 
+    [Header("Tekst")]
     public string[] playerActivityDeskription;
     [HideInInspector] public string[] activeDialog;
     public Dictionary<int, string[]> Activities = new Dictionary<int, string[]>();
@@ -29,10 +32,10 @@ public class npcDialogScript : MonoBehaviour
     private int answer;
     public int NPCLevel;
     public float wordSpeed;
+
     public bool isPlayerClose;
     public bool isLocked;
     public bool activatedActivity;
-    days _days; 
 
 
     // Days er kaldt fra klassen days, der styrer, hvorlangt i spillet man er. Spillet starter på 1 og slutter på 20
@@ -124,7 +127,7 @@ public class npcDialogScript : MonoBehaviour
         }
     }
 
-    //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
+    //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager svar mulighederne fra array af svar.
     public void choice()
     {
         decline.SetActive(true);
