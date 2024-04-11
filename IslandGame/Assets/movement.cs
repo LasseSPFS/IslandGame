@@ -25,7 +25,6 @@ public class movement : MonoBehaviour
 
 
         
-        whichWayAmILooking();
     }
 
     private void FixedUpdate()
@@ -35,7 +34,9 @@ public class movement : MonoBehaviour
         {
             rb.velocity = move.normalized * speed * Time.deltaTime;
         }
-       
+        whichWayAmILooking();
+
+
     }
 
 
