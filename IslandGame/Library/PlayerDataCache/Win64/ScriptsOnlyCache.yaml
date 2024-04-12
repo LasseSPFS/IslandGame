@@ -45,10 +45,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -768,7 +766,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 9b684e9512890747281d5087920561cd
+      Hash: d3d7bef9ad050f9c90be423b8d7f2d79
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: npcDialogScript
@@ -1422,7 +1420,7 @@ ScriptsOnlyBuild:
     className: CinemachineStateDrivenCamera
   - hash:
       serializedVersion: 2
-      Hash: 9b684e9512890747281d5087920561cd
+      Hash: d3d7bef9ad050f9c90be423b8d7f2d79
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: kaptajnSamtale
@@ -1519,4 +1517,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/SprintBuild3/IslandGame.exe
+  playerPath: C:/Users/lasse/OneDrive/HTX 3g/DDU/Eksamen/FinalBuild2/IslandGame.exe

@@ -15,6 +15,7 @@ public class npcDialogScript : MonoBehaviour
     public GameObject fortsæt;
     public GameObject decline;
     public GameObject accept;
+    public GameObject E;
     
     [Space(50)]
     [Header("Dialog")]
@@ -75,6 +76,15 @@ public class npcDialogScript : MonoBehaviour
                 decline.SetActive(false);
                 accept.SetActive(false);
                 StartCoroutine(Typing(activeDialog));
+        }
+        if(isPlayerClose && dialogPanel.activeInHierarchy == false)
+        {
+            E.SetActive(true);
+            E.transform.localPosition = new Vector3(0, (float)0.3, 0);
+        }
+        else
+        {
+            E.SetActive(false);
         }
 
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
