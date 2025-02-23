@@ -7,6 +7,7 @@ public class npcDialogScript : MonoBehaviour
 {
 
     [Header ("Acces objects")]
+    days _days;
     public GameObject dialogPanel;
     public TextMeshProUGUI dialogText;
     public GameObject PlayerdialogPanel;
@@ -14,51 +15,36 @@ public class npcDialogScript : MonoBehaviour
     public GameObject fortsæt;
     public GameObject decline;
     public GameObject accept;
+    public GameObject E;
     
     [Space(50)]
     [Header("Dialog")]
     [HideInInspector] public string[] activeDialog;
     public string[] dag1;
-    public string[] middag;
+    public string[] lvlZero;
+    public string[] lvlOne;
+    public string[] lvlTwo;
+    public string[] lvlTre;
+    public string[] lvlFire;
     public string[] aften;
-    public string[] morgen;
-    public string[] middag2;
-    public string[] aften2;
-    public string[] morgen2;
-    public string[] middag3;
-    public string[] aften3;
-    public string[] morgen3;
-    public string[] middag4;
-    public string[] aften4;
-    public string[] morgen4;
-    public string[] morgen5;
-    public string[] middag5;
-    public string[] activity1;
     public string[] declinAnswers;
     public string[] acceptAnswers;
     public string[] answer1;
     public string[] answer2; 
-    public string[] answer3;
     public string[] done;
     public string[] waitingForItem;
 
     [Header ("Værdier")]
     public Vector2[] locations;
     private int index;
-    private int answer = 0;
-    private int acceptIndex = 0;
-    private int actNumber = 1;
     public int NPCLevel;
     public float wordSpeed;
 
     [Header ("If")]
     private bool isPlayerClose;
     private bool activatedActivity;
-    public bool isMorningAndDaySame;
-    public bool activateAct1;
     public bool actDoneForTheDay;
     public bool npcLockedUntilItem;
-    days _days;
 
 
     // Days er kaldt fra klassen days, der styrer, hvorlangt i spillet man er. Spillet starter på 1 og slutter på 20
@@ -68,28 +54,20 @@ public class npcDialogScript : MonoBehaviour
         _days = GameObject.Find("DayManager").GetComponent<days>();
         dialogText.text = "";
         activeDialog = dag1;
-        if (isMorningAndDaySame)
-        {
-            morgen = middag;
-            morgen2 = middag2;
-            middag3 = morgen3;
-            middag4 = morgen4;
-            middag5 = morgen5;
-        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(gameObject.name + " er level: " + NPCLevel);
-        if (actDoneForTheDay)
-        {
-            activeDialog = done;
-        }
-        else if(npcLockedUntilItem)
+        if (npcLockedUntilItem)
         {           
             activeDialog = waitingForItem;
         }
+        else if (actDoneForTheDay)
+        {
+            activeDialog = done;
+        }
+
         //tjekker om spilleren er tæt på NPC'en og om spilleren klikke E
         if (Input.GetKeyDown(KeyCode.E) && isPlayerClose && dialogPanel.activeInHierarchy == false)
         {
@@ -99,8 +77,18 @@ public class npcDialogScript : MonoBehaviour
                 accept.SetActive(false);
                 StartCoroutine(Typing(activeDialog));
         }
+        if(isPlayerClose && dialogPanel.activeInHierarchy == false)
+        {
+            E.SetActive(true);
+            E.transform.localPosition = new Vector3(0, (float)0.3, 0);
+        }
+        else
+        {
+            E.SetActive(false);
+        }
+
         //Når teksten er færdig med at blive skrevet, altså når Coroutine har kørt færdig kommer fortsæt knappen
-        if (dialogText.text == activeDialog[index] && activeDialog != declinAnswers)
+        if (dialogText.text == activeDialog[index] && activeDialog != declinAnswers && accept.gameObject.activeInHierarchy == false)
         {
             fortsæt.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Space))
@@ -125,8 +113,7 @@ public class npcDialogScript : MonoBehaviour
     }
     //Funktion der køres, når der klikkes på fortsæt knappen 
     public void NextLine()
-    {
-        
+    {     
         fortsæt.SetActive(false);
         //Hvis det ikke er sidste textbox i dialogen Sætter vi teksten til ingenting og fylder den ud igen ved at starte en coroutine ellers køre den zero tekst.
         if (index < activeDialog.Length - 1)
@@ -170,10 +157,12 @@ public class npcDialogScript : MonoBehaviour
     //kaldes når spilleren skal lave et valg sætter valg knapperne aktive og tager scar mulighederne fra array af svar.
     public void choice()
     {
+        
         decline.SetActive(true);
         accept.SetActive(true);
         decline.GetComponentInChildren<TMP_Text>().text = answer1[NPCLevel];
         accept.GetComponentInChildren<TMP_Text>().text = answer2[NPCLevel];
+
     }
 
     // Hvad der køres når du klikker accept
@@ -197,25 +186,6 @@ public class npcDialogScript : MonoBehaviour
         dialogText.text = "";
         activeDialog = declinAnswers;
         StartCoroutine(Typing(activeDialog));
-    }
-
-    public string[] whichAct(int act)
-    {
-        if (act == 1)
-        {
-            actNumber++;
-            return activity1;
-        }
-       
-        else return activeDialog;
-    }
-
-    public void actRunner()
-    {
-        fortsæt.SetActive(true);
-        index = 0;
-        activatedActivity = true;
-        activeDialog = whichAct(actNumber);
     }
     
 
@@ -247,11 +217,6 @@ public class npcDialogScript : MonoBehaviour
                     index = 0;
                     npcLockedUntilItem = true;   
                     
-                }
-                else if (Bogstav.ToString() == "£")
-                {
-
-                    actRunner();
                 }
                 else if (Bogstav.ToString() == "€")
                 {

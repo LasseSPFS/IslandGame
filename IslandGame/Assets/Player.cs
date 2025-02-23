@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -15,11 +16,14 @@ public class Player : MonoBehaviour
         _days = GameObject.Find("DayManager").GetComponent<days>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        Debug.Log(inBed);
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "bed")

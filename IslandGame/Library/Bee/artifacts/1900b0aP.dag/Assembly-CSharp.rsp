@@ -297,6 +297,7 @@
 -r:"C:/Users/lasse/OneDrive/Dokumenter/GitHub/IslandGame/IslandGame/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.PixelPerfect.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.Tilemap.Extras.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Timeline.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Core.ref.dll"

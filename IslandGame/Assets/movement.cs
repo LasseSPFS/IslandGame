@@ -19,12 +19,6 @@ public class movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        //float inputX = Input.GetAxisRaw("Horizontal");
-        //float inputY = Input.GetAxisRaw("Vertical");
-
-
-        
         whichWayAmILooking();
     }
 
@@ -40,7 +34,6 @@ public class movement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, 0);
         }
-       
     }
 
 
@@ -85,8 +78,5 @@ public class movement : MonoBehaviour
         }
 
     }
-
-   
-
 }
 
